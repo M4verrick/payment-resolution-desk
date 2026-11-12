@@ -1,0 +1,33 @@
+{
+  "id": "eval-22-wrong-invoice",
+  "customerId": "synthetic-customer-22",
+  "contact": "customer22@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-22",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 57000,
+    "recordedCents": 0,
+    "dueCents": 57000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-22-wrong-invoice-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 22",
+      "text": "We paid OTHER-99; please apply it here."
+    },
+    {
+      "id": "eval-22-wrong-invoice-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 22",
+      "text": "Owner note: no linked payment record for this invoice is supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

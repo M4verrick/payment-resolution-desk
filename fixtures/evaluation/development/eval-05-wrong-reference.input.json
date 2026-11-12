@@ -1,0 +1,33 @@
+{
+  "id": "eval-05-wrong-reference",
+  "customerId": "synthetic-customer-05",
+  "contact": "customer05@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-05",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 72000,
+    "recordedCents": 0,
+    "dueCents": 72000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-05-wrong-reference-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 05",
+      "text": "We need REF-824 on the invoice, not REF-842."
+    },
+    {
+      "id": "eval-05-wrong-reference-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 05",
+      "text": "Owner document: invoice reference REF-842. No reference confirmation supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "eval-15-old-copy-approval",
+  "customerId": "synthetic-customer-15",
+  "contact": "customer15@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-15",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 92000,
+    "recordedCents": 0,
+    "dueCents": 92000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-15-old-copy-approval-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 15",
+      "text": "I am looking at an $800 copy and question the additional $120."
+    },
+    {
+      "id": "eval-15-old-copy-approval-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 15",
+      "text": "Owner document: a supplied email states approval of the $120 addition; authenticity not verified."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

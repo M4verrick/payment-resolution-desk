@@ -1,0 +1,41 @@
+{
+  "id": "eval-16-delivery-evidence",
+  "expectedBlockers": {
+    "questioned_amount": "absent",
+    "missing_document": "present",
+    "payment_timing": "absent"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-16-delivery-evidence-source-1",
+      "start": 0,
+      "end": 65,
+      "quote": "Our team needs the delivery record and project identifier PX-901."
+    },
+    {
+      "sourceId": "eval-16-delivery-evidence-source-2",
+      "start": 0,
+      "end": 70,
+      "quote": "Owner document: invoice shows PX-910. Delivery record is not supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Check both the delivery record and project reference."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

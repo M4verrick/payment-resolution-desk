@@ -1,0 +1,41 @@
+{
+  "id": "eval-12-clear-approved",
+  "expectedBlockers": {
+    "questioned_amount": "absent",
+    "missing_document": "absent",
+    "payment_timing": "absent"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-12-clear-approved-source-1",
+      "start": 0,
+      "end": 76,
+      "quote": "The invoice matches our approved work and reference. Finance will review it."
+    },
+    {
+      "sourceId": "eval-12-clear-approved-source-2",
+      "start": 0,
+      "end": 84,
+      "quote": "Owner document: approved amount $260, matching invoice. No missing document request."
+    }
+  ],
+  "acceptableNextActions": [
+    "Keep blockers absent unless new evidence establishes one; payment remains unrecorded."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

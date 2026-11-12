@@ -1,0 +1,33 @@
+{
+  "id": "eval-12-clear-approved",
+  "customerId": "synthetic-customer-12",
+  "contact": "customer12@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-12",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 26000,
+    "recordedCents": 0,
+    "dueCents": 26000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-12-clear-approved-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 12",
+      "text": "The invoice matches our approved work and reference. Finance will review it."
+    },
+    {
+      "id": "eval-12-clear-approved-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 12",
+      "text": "Owner document: approved amount $260, matching invoice. No missing document request."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

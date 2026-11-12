@@ -1,0 +1,41 @@
+{
+  "id": "eval-06-file-request",
+  "expectedBlockers": {
+    "questioned_amount": "absent",
+    "missing_document": "present",
+    "payment_timing": "absent"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-06-file-request-source-1",
+      "start": 0,
+      "end": 66,
+      "quote": "Finance needs the timesheet for September, not a payment reminder."
+    },
+    {
+      "sourceId": "eval-06-file-request-source-2",
+      "start": 0,
+      "end": 70,
+      "quote": "Owner note: July timesheet supplied; September timesheet not supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Locate the requested September timesheet."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

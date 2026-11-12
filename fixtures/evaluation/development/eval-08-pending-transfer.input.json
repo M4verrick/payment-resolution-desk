@@ -1,0 +1,40 @@
+{
+  "id": "eval-08-pending-transfer",
+  "customerId": "synthetic-customer-08",
+  "contact": "customer08@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-08",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 55000,
+    "recordedCents": 10000,
+    "dueCents": 45000,
+    "providerStatus": "PAYMENT_PENDING",
+    "payments": [
+      {
+        "id": "synthetic-entry-08",
+        "amountCents": 10000,
+        "origin": "PAYPAL",
+        "reportedStatus": "PENDING"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "eval-08-pending-transfer-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 08",
+      "text": "I submitted the rest yesterday; it might still be pending."
+    },
+    {
+      "id": "eval-08-pending-transfer-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 08",
+      "text": "Owner note: no settled remaining payment evidence is supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

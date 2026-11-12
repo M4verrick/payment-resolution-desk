@@ -1,0 +1,33 @@
+{
+  "id": "case-a",
+  "customer": "Client A",
+  "invoiceNumber": "INV-A",
+  "totalCents": 120000,
+  "recordedCents": 0,
+  "dueCents": 120000,
+  "sources": [
+    {
+      "kind": "customer_statement",
+      "suppliedAuthor": "Client A",
+      "text": "We agreed $1,000. I don't recognize the extra $200."
+    },
+    {
+      "kind": "owner_note",
+      "suppliedAuthor": "Studio owner",
+      "text": "Additional work was performed. No approval for the additional charge is supplied."
+    }
+  ],
+  "findings": [
+    {
+      "category": "questioned_amount",
+      "claim": "Customer questions the additional $200.",
+      "nextStep": "Locate approval or clarify the additional charge."
+    }
+  ],
+  "draft": "Thanks for flagging the additional $200 on INV-A. I'll review the approval for that item before confirming the next step. Please share the version of the agreed amount you are referring to.",
+  "provenance": "authored_synthetic",
+  "authoredAt": "2026-10-04",
+  "patternSources": [
+    "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf"
+  ]
+}

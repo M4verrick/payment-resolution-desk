@@ -1,0 +1,33 @@
+{
+  "id": "eval-24-confirmed-documents",
+  "customerId": "synthetic-customer-24",
+  "contact": "customer24@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-24",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 98000,
+    "recordedCents": 0,
+    "dueCents": 98000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-24-confirmed-documents-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 24",
+      "text": "We have the signed report and correct PO-600. There is no issue with the amount."
+    },
+    {
+      "id": "eval-24-confirmed-documents-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 24",
+      "text": "Owner document: reference PO-600; matching amount and report stated supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

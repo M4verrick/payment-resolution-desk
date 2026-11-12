@@ -1,0 +1,40 @@
+{
+  "id": "eval-21-handover-contradiction",
+  "customerId": "synthetic-customer-21",
+  "contact": "customer21@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-21",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 132000,
+    "recordedCents": 32000,
+    "dueCents": 100000,
+    "providerStatus": "PARTIALLY_PAID",
+    "payments": [
+      {
+        "id": "synthetic-entry-21",
+        "amountCents": 32000,
+        "origin": "PAYPAL",
+        "reportedStatus": null
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "eval-21-handover-contradiction-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 21",
+      "text": "Handover happened Monday. The rest is due after handover."
+    },
+    {
+      "id": "eval-21-handover-contradiction-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 21",
+      "text": "Owner note: Monday handover was postponed. No customer acceptance is supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "case-b",
+  "customer": "Client B",
+  "invoiceNumber": "INV-B",
+  "totalCents": 85000,
+  "recordedCents": 0,
+  "dueCents": 85000,
+  "sources": [
+    {
+      "kind": "customer_statement",
+      "suppliedAuthor": "Client B",
+      "text": "Finance needs the signed completion report and PO-482."
+    },
+    {
+      "kind": "owner_document",
+      "suppliedAuthor": "Studio owner",
+      "text": "Completion report\nInvoice reference: PO-428\nClient signature: not supplied"
+    }
+  ],
+  "findings": [
+    {
+      "category": "missing_document",
+      "claim": "Customer requests a signed completion report.",
+      "nextStep": "Check for the signed report."
+    },
+    {
+      "category": "missing_document",
+      "claim": "PO references differ: PO-482 / PO-428.",
+      "nextStep": "Ask which purchase order reference is correct."
+    }
+  ],
+  "draft": "Thanks. Your message refers to PO-482, while INV-B shows PO-428. Please confirm the correct reference. I will also check for the signed completion report.",
+  "provenance": "authored_synthetic",
+  "authoredAt": "2026-10-04",
+  "patternSources": [
+    "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "eval-16-delivery-evidence",
+  "customerId": "synthetic-customer-16",
+  "contact": "customer16@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-16",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 43000,
+    "recordedCents": 0,
+    "dueCents": 43000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-16-delivery-evidence-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 16",
+      "text": "Our team needs the delivery record and project identifier PX-901."
+    },
+    {
+      "id": "eval-16-delivery-evidence-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 16",
+      "text": "Owner document: invoice shows PX-910. Delivery record is not supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

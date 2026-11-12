@@ -1,0 +1,41 @@
+{
+  "id": "eval-15-old-copy-approval",
+  "expectedBlockers": {
+    "questioned_amount": "present",
+    "missing_document": "absent",
+    "payment_timing": "absent"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-15-old-copy-approval-source-1",
+      "start": 0,
+      "end": 62,
+      "quote": "I am looking at an $800 copy and question the additional $120."
+    },
+    {
+      "sourceId": "eval-15-old-copy-approval-source-2",
+      "start": 0,
+      "end": 97,
+      "quote": "Owner document: a supplied email states approval of the $120 addition; authenticity not verified."
+    }
+  ],
+  "acceptableNextActions": [
+    "Compare the exact versions and supplied approval; do not claim legal entitlement."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

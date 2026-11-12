@@ -1,0 +1,40 @@
+{
+  "id": "eval-20-pending-zero",
+  "customerId": "synthetic-customer-20",
+  "contact": "customer20@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-20",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 76000,
+    "recordedCents": 76000,
+    "dueCents": 0,
+    "providerStatus": "PAYMENT_PENDING",
+    "payments": [
+      {
+        "id": "synthetic-entry-20",
+        "amountCents": 76000,
+        "origin": "PAYPAL",
+        "reportedStatus": "PENDING"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "eval-20-pending-zero-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 20",
+      "text": "The payment page returned me to the invoice, so everything must be settled."
+    },
+    {
+      "id": "eval-20-pending-zero-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 20",
+      "text": "Owner note: provider remains PAYMENT_PENDING; a browser return is not settlement evidence."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "eval-09-external-record",
+  "expectedBlockers": {
+    "questioned_amount": "absent",
+    "missing_document": "absent",
+    "payment_timing": "present"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-09-external-record-source-1",
+      "start": 0,
+      "end": 43,
+      "quote": "The bank transfer should cover the invoice."
+    },
+    {
+      "sourceId": "eval-09-external-record-source-2",
+      "start": 0,
+      "end": 93,
+      "quote": "Owner note: invoice was marked paid externally; no independent bank confirmation is supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Check the external record separately and avoid claiming settled PayPal receipts."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

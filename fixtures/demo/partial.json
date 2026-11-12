@@ -1,0 +1,33 @@
+{
+  "id": "case-c",
+  "customer": "Client C",
+  "invoiceNumber": "INV-C",
+  "totalCents": 90000,
+  "recordedCents": 30000,
+  "dueCents": 60000,
+  "sources": [
+    {
+      "kind": "customer_statement",
+      "suppliedAuthor": "Client C",
+      "text": "The $300 was the deposit. The rest is due after handover."
+    },
+    {
+      "kind": "owner_document",
+      "suppliedAuthor": "Studio owner",
+      "text": "Invoice terms\nTotal: $900\nDue date: 2026-10-01\nNo revised handover/payment timing agreement is supplied."
+    }
+  ],
+  "findings": [
+    {
+      "category": "payment_timing",
+      "claim": "Customer timing conflicts with the recorded invoice due date.",
+      "nextStep": "Clarify the agreed handover and payment timing."
+    }
+  ],
+  "draft": "The synthetic invoice shows $300 recorded against INV-C and $600 remaining. You mentioned that the remainder is due after handover, while the invoice shows a due date of 2026-10-01. Could you confirm the agreed handover and payment timing?",
+  "provenance": "authored_synthetic",
+  "authoredAt": "2026-10-04",
+  "patternSources": [
+    "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf"
+  ]
+}

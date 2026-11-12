@@ -1,0 +1,41 @@
+{
+  "id": "eval-17-completion-copy",
+  "expectedBlockers": {
+    "questioned_amount": "absent",
+    "missing_document": "present",
+    "payment_timing": "absent"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-17-completion-copy-source-1",
+      "start": 0,
+      "end": 63,
+      "quote": "Can you send the signed copy of the final inspection checklist?"
+    },
+    {
+      "sourceId": "eval-17-completion-copy-source-2",
+      "start": 0,
+      "end": 96,
+      "quote": "Owner document: Final inspection checklist\r\nClient approval: not supplied\r\nChecklist prepared 😀"
+    }
+  ],
+  "acceptableNextActions": [
+    "Look for the signed final copy; prepared text does not prove client approval."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

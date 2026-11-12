@@ -1,0 +1,41 @@
+{
+  "id": "eval-14-milestone-scope",
+  "expectedBlockers": {
+    "questioned_amount": "present",
+    "missing_document": "absent",
+    "payment_timing": "absent"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-14-milestone-scope-source-1",
+      "start": 0,
+      "end": 79,
+      "quote": "We expected to pay only the design milestone, not the implementation milestone."
+    },
+    {
+      "sourceId": "eval-14-milestone-scope-source-2",
+      "start": 0,
+      "end": 80,
+      "quote": "Owner note: both stages appear in this invoice; milestone approval not supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Find the milestone scope and approval before confirming the amount due commercially."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

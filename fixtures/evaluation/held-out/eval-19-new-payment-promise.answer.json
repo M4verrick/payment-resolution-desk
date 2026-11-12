@@ -1,0 +1,41 @@
+{
+  "id": "eval-19-new-payment-promise",
+  "expectedBlockers": {
+    "questioned_amount": "absent",
+    "missing_document": "absent",
+    "payment_timing": "present"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-19-new-payment-promise-source-1",
+      "start": 0,
+      "end": 63,
+      "quote": "The deposit is paid. I will pay the remaining $850 next Friday."
+    },
+    {
+      "sourceId": "eval-19-new-payment-promise-source-2",
+      "start": 0,
+      "end": 62,
+      "quote": "Invoice due date: 2026-10-01. No agreed extension is supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Clarify whether the proposed timing was accepted; a promise is not payment."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

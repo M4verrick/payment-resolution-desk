@@ -1,0 +1,33 @@
+{
+  "id": "eval-13-tax-question",
+  "customerId": "synthetic-customer-13",
+  "contact": "customer13@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-13",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 106000,
+    "recordedCents": 0,
+    "dueCents": 106000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-13-tax-question-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 13",
+      "text": "Why is $60 tax added? Our quote showed $1,000 inclusive."
+    },
+    {
+      "id": "eval-13-tax-question-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 13",
+      "text": "Owner document: quote wording about tax is ambiguous; no agreed tax treatment is supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

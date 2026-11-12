@@ -1,0 +1,33 @@
+{
+  "id": "eval-14-milestone-scope",
+  "customerId": "synthetic-customer-14",
+  "contact": "customer14@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-14",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 150000,
+    "recordedCents": 0,
+    "dueCents": 150000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-14-milestone-scope-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 14",
+      "text": "We expected to pay only the design milestone, not the implementation milestone."
+    },
+    {
+      "id": "eval-14-milestone-scope-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 14",
+      "text": "Owner note: both stages appear in this invoice; milestone approval not supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

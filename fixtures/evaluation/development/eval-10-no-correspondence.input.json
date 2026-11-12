@@ -1,0 +1,26 @@
+{
+  "id": "eval-10-no-correspondence",
+  "customerId": "synthetic-customer-10",
+  "contact": "customer10@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-10",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 21000,
+    "recordedCents": 0,
+    "dueCents": 21000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-10-no-correspondence-source-1",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 10",
+      "text": "Owner note: there is no customer reply explaining this invoice."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

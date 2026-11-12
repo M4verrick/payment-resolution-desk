@@ -1,0 +1,41 @@
+{
+  "id": "eval-13-tax-question",
+  "expectedBlockers": {
+    "questioned_amount": "present",
+    "missing_document": "absent",
+    "payment_timing": "absent"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-13-tax-question-source-1",
+      "start": 0,
+      "end": 56,
+      "quote": "Why is $60 tax added? Our quote showed $1,000 inclusive."
+    },
+    {
+      "sourceId": "eval-13-tax-question-source-2",
+      "start": 0,
+      "end": 90,
+      "quote": "Owner document: quote wording about tax is ambiguous; no agreed tax treatment is supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Clarify the agreed tax treatment without adjudicating or discounting the invoice."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

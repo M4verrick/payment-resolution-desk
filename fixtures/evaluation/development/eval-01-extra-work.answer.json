@@ -1,0 +1,41 @@
+{
+  "id": "eval-01-extra-work",
+  "expectedBlockers": {
+    "questioned_amount": "present",
+    "missing_document": "absent",
+    "payment_timing": "absent"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-01-extra-work-source-1",
+      "start": 0,
+      "end": 67,
+      "quote": "The estimate was $1,000; I cannot find approval for the extra $200."
+    },
+    {
+      "sourceId": "eval-01-extra-work-source-2",
+      "start": 0,
+      "end": 62,
+      "quote": "Owner note: extra work was performed; no approval is supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Locate approval or clarify the extra work charge."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

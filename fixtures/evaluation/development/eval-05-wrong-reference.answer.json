@@ -1,0 +1,41 @@
+{
+  "id": "eval-05-wrong-reference",
+  "expectedBlockers": {
+    "questioned_amount": "absent",
+    "missing_document": "present",
+    "payment_timing": "absent"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-05-wrong-reference-source-1",
+      "start": 0,
+      "end": 44,
+      "quote": "We need REF-824 on the invoice, not REF-842."
+    },
+    {
+      "sourceId": "eval-05-wrong-reference-source-2",
+      "start": 0,
+      "end": 78,
+      "quote": "Owner document: invoice reference REF-842. No reference confirmation supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Ask which reference is correct without changing the invoice."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

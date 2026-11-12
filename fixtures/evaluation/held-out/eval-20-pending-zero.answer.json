@@ -1,0 +1,41 @@
+{
+  "id": "eval-20-pending-zero",
+  "expectedBlockers": {
+    "questioned_amount": "absent",
+    "missing_document": "absent",
+    "payment_timing": "present"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-20-pending-zero-source-1",
+      "start": 0,
+      "end": 75,
+      "quote": "The payment page returned me to the invoice, so everything must be settled."
+    },
+    {
+      "sourceId": "eval-20-pending-zero-source-2",
+      "start": 0,
+      "end": 90,
+      "quote": "Owner note: provider remains PAYMENT_PENDING; a browser return is not settlement evidence."
+    }
+  ],
+  "acceptableNextActions": [
+    "Refresh and wait for matching provider evidence; keep pending distinct from paid."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

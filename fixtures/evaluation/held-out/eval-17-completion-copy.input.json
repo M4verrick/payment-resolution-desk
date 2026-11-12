@@ -1,0 +1,33 @@
+{
+  "id": "eval-17-completion-copy",
+  "customerId": "synthetic-customer-17",
+  "contact": "customer17@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-17",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 64000,
+    "recordedCents": 0,
+    "dueCents": 64000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-17-completion-copy-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 17",
+      "text": "Can you send the signed copy of the final inspection checklist?"
+    },
+    {
+      "id": "eval-17-completion-copy-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 17",
+      "text": "Owner document: Final inspection checklist\r\nClient approval: not supplied\r\nChecklist prepared 😀"
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

@@ -1,0 +1,17 @@
+PRAGMA foreign_keys = ON;
+CREATE TABLE IF NOT EXISTS cases(id TEXT PRIMARY KEY, version INTEGER NOT NULL CHECK(version>=1), detail TEXT NOT NULL CHECK(json_valid(detail)));
+CREATE TABLE IF NOT EXISTS sources(id TEXT PRIMARY KEY, case_id TEXT NOT NULL REFERENCES cases(id), source_id TEXT NOT NULL, version INTEGER NOT NULL CHECK(version>=1), payload TEXT NOT NULL CHECK(json_valid(payload)), UNIQUE(case_id,source_id,version));
+CREATE TABLE IF NOT EXISTS drafts(id TEXT PRIMARY KEY, case_id TEXT NOT NULL REFERENCES cases(id), payload TEXT NOT NULL CHECK(json_valid(payload)));
+CREATE TABLE IF NOT EXISTS snapshots(id TEXT PRIMARY KEY,case_id TEXT NOT NULL REFERENCES cases(id),payload TEXT NOT NULL CHECK(json_valid(payload)));
+CREATE TABLE IF NOT EXISTS activity(id TEXT PRIMARY KEY, case_id TEXT NOT NULL REFERENCES cases(id), payload TEXT NOT NULL CHECK(json_valid(payload)));
+CREATE TABLE IF NOT EXISTS operations(id TEXT PRIMARY KEY, case_id TEXT NOT NULL REFERENCES cases(id), payload_hash TEXT NOT NULL, action_id TEXT NOT NULL REFERENCES activity(id));
+CREATE TABLE IF NOT EXISTS copy_permits(id TEXT PRIMARY KEY,case_id TEXT NOT NULL REFERENCES cases(id),payload TEXT NOT NULL CHECK(json_valid(payload)));
+CREATE TRIGGER IF NOT EXISTS immutable_sources_update BEFORE UPDATE ON sources BEGIN SELECT RAISE(ABORT,'immutable source'); END;
+CREATE TRIGGER IF NOT EXISTS immutable_sources_delete BEFORE DELETE ON sources BEGIN SELECT RAISE(ABORT,'immutable source'); END;
+CREATE TRIGGER IF NOT EXISTS immutable_activity_update BEFORE UPDATE ON activity BEGIN SELECT RAISE(ABORT,'append-only activity'); END;
+CREATE TRIGGER IF NOT EXISTS immutable_activity_delete BEFORE DELETE ON activity BEGIN SELECT RAISE(ABORT,'append-only activity'); END;
+CREATE TRIGGER IF NOT EXISTS immutable_drafts_update BEFORE UPDATE ON drafts BEGIN SELECT RAISE(ABORT,'immutable draft'); END;
+CREATE TRIGGER IF NOT EXISTS immutable_snapshots_update BEFORE UPDATE ON snapshots BEGIN SELECT RAISE(ABORT,'immutable snapshot'); END;
+CREATE TABLE IF NOT EXISTS review_contexts(context_hash TEXT PRIMARY KEY,case_id TEXT NOT NULL REFERENCES cases(id),payload TEXT NOT NULL CHECK(json_valid(payload)));
+CREATE TRIGGER IF NOT EXISTS immutable_review_context_update BEFORE UPDATE ON review_contexts BEGIN SELECT RAISE(ABORT,'immutable review context'); END;
+CREATE TRIGGER IF NOT EXISTS immutable_review_context_delete BEFORE DELETE ON review_contexts BEGIN SELECT RAISE(ABORT,'immutable review context'); END;

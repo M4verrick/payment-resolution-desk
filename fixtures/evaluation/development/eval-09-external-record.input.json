@@ -1,0 +1,40 @@
+{
+  "id": "eval-09-external-record",
+  "customerId": "synthetic-customer-09",
+  "contact": "customer09@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-09",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 80000,
+    "recordedCents": 80000,
+    "dueCents": 0,
+    "providerStatus": "MARKED_AS_PAID",
+    "payments": [
+      {
+        "id": "synthetic-entry-09",
+        "amountCents": 80000,
+        "origin": "EXTERNAL",
+        "reportedStatus": null
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "eval-09-external-record-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 09",
+      "text": "The bank transfer should cover the invoice."
+    },
+    {
+      "id": "eval-09-external-record-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 09",
+      "text": "Owner note: invoice was marked paid externally; no independent bank confirmation is supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

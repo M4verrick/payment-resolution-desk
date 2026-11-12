@@ -1,0 +1,9 @@
+{
+  "provenance": "authored_synthetic",
+  "cases": [
+    "amount.json",
+    "documents.json",
+    "partial.json"
+  ],
+  "noRealCustomers": true
+}

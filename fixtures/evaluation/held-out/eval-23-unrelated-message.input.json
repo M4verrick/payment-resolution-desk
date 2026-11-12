@@ -1,0 +1,33 @@
+{
+  "id": "eval-23-unrelated-message",
+  "customerId": "synthetic-customer-23",
+  "contact": "customer23@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-23",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 19000,
+    "recordedCents": 0,
+    "dueCents": 19000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-23-unrelated-message-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 23",
+      "text": "Thank you for the colour samples. We like the blue option."
+    },
+    {
+      "id": "eval-23-unrelated-message-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 23",
+      "text": "Owner note: no payment or invoice concern is mentioned."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "eval-03-amount-plus-po",
+  "expectedBlockers": {
+    "questioned_amount": "present",
+    "missing_document": "present",
+    "payment_timing": "absent"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-03-amount-plus-po-source-1",
+      "start": 0,
+      "end": 76,
+      "quote": "The $60 expense needs a receipt, and finance expects PO-17 instead of PO-71."
+    },
+    {
+      "sourceId": "eval-03-amount-plus-po-source-2",
+      "start": 0,
+      "end": 80,
+      "quote": "Owner note: expense was incurred. Invoice reference PO-71. Receipt not supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Check the expense evidence and ask for the correct PO reference."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "eval-06-file-request",
+  "customerId": "synthetic-customer-06",
+  "contact": "customer06@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-06",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 31000,
+    "recordedCents": 0,
+    "dueCents": 31000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-06-file-request-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 06",
+      "text": "Finance needs the timesheet for September, not a payment reminder."
+    },
+    {
+      "id": "eval-06-file-request-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 06",
+      "text": "Owner note: July timesheet supplied; September timesheet not supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

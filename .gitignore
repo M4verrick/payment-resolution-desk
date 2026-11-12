@@ -1,0 +1,37 @@
+spikes/local-scope/.assets/
+spikes/local-scope/__pycache__/
+
+# Local application and test artifacts
+.local/
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+playwright-report/
+test-results/
+coverage/
+.superpowers/
+.DS_Store
+payment-resolution-desk-media/
+
+# Preserve local review evidence and generated outputs outside source history
+docs/screenshots/
+docs/acceptance-report.md
+docs/gap-review-2026-10-04.md
+docs/implementation-ledger.md
+docs/independent-code-review-2026-10-04.md
+spikes/local-scope/results/
+spikes/local-scope/results-repeat*/
+spikes/local-scope/report.md
+spikes/local-scope/resource-snapshot.json
+spikes/local-scope/setup-failure.txt
+spikes/local-scope/validator-controls.json
+
+# Never version runtime databases or exported private keys, wherever created.
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.pem
+*.key

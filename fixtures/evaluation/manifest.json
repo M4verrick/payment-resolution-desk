@@ -1,0 +1,442 @@
+{
+  "schemaVersion": 1,
+  "authoredAt": "2026-10-04",
+  "provenance": "authored_synthetic",
+  "privateData": false,
+  "modelEvaluation": "not_run",
+  "splitFrozenBeforeInference": true,
+  "cases": [
+    {
+      "id": "eval-01-extra-work",
+      "split": "development",
+      "family": "questioned_amount",
+      "input": "development/eval-01-extra-work.input.json",
+      "answer": "development/eval-01-extra-work.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-02-rate-version",
+      "split": "development",
+      "family": "questioned_amount",
+      "input": "development/eval-02-rate-version.input.json",
+      "answer": "development/eval-02-rate-version.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-03-amount-plus-po",
+      "split": "development",
+      "family": "questioned_amount",
+      "input": "development/eval-03-amount-plus-po.input.json",
+      "answer": "development/eval-03-amount-plus-po.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-04-unsigned-report",
+      "split": "development",
+      "family": "missing_document",
+      "input": "development/eval-04-unsigned-report.input.json",
+      "answer": "development/eval-04-unsigned-report.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-05-wrong-reference",
+      "split": "development",
+      "family": "missing_document",
+      "input": "development/eval-05-wrong-reference.input.json",
+      "answer": "development/eval-05-wrong-reference.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-06-file-request",
+      "split": "development",
+      "family": "missing_document",
+      "input": "development/eval-06-file-request.input.json",
+      "answer": "development/eval-06-file-request.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-07-deposit-handover",
+      "split": "development",
+      "family": "payment_timing",
+      "input": "development/eval-07-deposit-handover.input.json",
+      "answer": "development/eval-07-deposit-handover.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-08-pending-transfer",
+      "split": "development",
+      "family": "payment_timing",
+      "input": "development/eval-08-pending-transfer.input.json",
+      "answer": "development/eval-08-pending-transfer.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-09-external-record",
+      "split": "development",
+      "family": "payment_timing",
+      "input": "development/eval-09-external-record.input.json",
+      "answer": "development/eval-09-external-record.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-10-no-correspondence",
+      "split": "development",
+      "family": "unknown",
+      "input": "development/eval-10-no-correspondence.input.json",
+      "answer": "development/eval-10-no-correspondence.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-11-instruction-attack",
+      "split": "development",
+      "family": "unknown",
+      "input": "development/eval-11-instruction-attack.input.json",
+      "answer": "development/eval-11-instruction-attack.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-12-clear-approved",
+      "split": "development",
+      "family": "unknown",
+      "input": "development/eval-12-clear-approved.input.json",
+      "answer": "development/eval-12-clear-approved.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-13-tax-question",
+      "split": "held-out",
+      "family": "questioned_amount",
+      "input": "held-out/eval-13-tax-question.input.json",
+      "answer": "held-out/eval-13-tax-question.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-14-milestone-scope",
+      "split": "held-out",
+      "family": "questioned_amount",
+      "input": "held-out/eval-14-milestone-scope.input.json",
+      "answer": "held-out/eval-14-milestone-scope.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-15-old-copy-approval",
+      "split": "held-out",
+      "family": "questioned_amount",
+      "input": "held-out/eval-15-old-copy-approval.input.json",
+      "answer": "held-out/eval-15-old-copy-approval.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-16-delivery-evidence",
+      "split": "held-out",
+      "family": "missing_document",
+      "input": "held-out/eval-16-delivery-evidence.input.json",
+      "answer": "held-out/eval-16-delivery-evidence.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-17-completion-copy",
+      "split": "held-out",
+      "family": "missing_document",
+      "input": "held-out/eval-17-completion-copy.input.json",
+      "answer": "held-out/eval-17-completion-copy.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-18-attachment-claim",
+      "split": "held-out",
+      "family": "missing_document",
+      "input": "held-out/eval-18-attachment-claim.input.json",
+      "answer": "held-out/eval-18-attachment-claim.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-19-new-payment-promise",
+      "split": "held-out",
+      "family": "payment_timing",
+      "input": "held-out/eval-19-new-payment-promise.input.json",
+      "answer": "held-out/eval-19-new-payment-promise.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-20-pending-zero",
+      "split": "held-out",
+      "family": "payment_timing",
+      "input": "held-out/eval-20-pending-zero.input.json",
+      "answer": "held-out/eval-20-pending-zero.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-21-handover-contradiction",
+      "split": "held-out",
+      "family": "payment_timing",
+      "input": "held-out/eval-21-handover-contradiction.input.json",
+      "answer": "held-out/eval-21-handover-contradiction.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-22-wrong-invoice",
+      "split": "held-out",
+      "family": "unknown",
+      "input": "held-out/eval-22-wrong-invoice.input.json",
+      "answer": "held-out/eval-22-wrong-invoice.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-23-unrelated-message",
+      "split": "held-out",
+      "family": "unknown",
+      "input": "held-out/eval-23-unrelated-message.input.json",
+      "answer": "held-out/eval-23-unrelated-message.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    },
+    {
+      "id": "eval-24-confirmed-documents",
+      "split": "held-out",
+      "family": "unknown",
+      "input": "held-out/eval-24-confirmed-documents.input.json",
+      "answer": "held-out/eval-24-confirmed-documents.answer.json",
+      "inventedFields": [
+        "customerId",
+        "contact",
+        "invoice",
+        "sources"
+      ],
+      "patternSources": [
+        "https://assets.publishing.service.gov.uk/media/66eb01e7ba4b4b3f945016c8/late-payments-research-understanding-variations-in-payment-performance-and-practices-across-business-sectors-and-sizes.pdf",
+        "https://developer.paypal.com/api/invoicing/v2/schema.json"
+      ],
+      "relatedCaseIds": []
+    }
+  ]
+}

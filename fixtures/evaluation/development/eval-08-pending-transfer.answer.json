@@ -1,0 +1,41 @@
+{
+  "id": "eval-08-pending-transfer",
+  "expectedBlockers": {
+    "questioned_amount": "absent",
+    "missing_document": "absent",
+    "payment_timing": "present"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-08-pending-transfer-source-1",
+      "start": 0,
+      "end": 58,
+      "quote": "I submitted the rest yesterday; it might still be pending."
+    },
+    {
+      "sourceId": "eval-08-pending-transfer-source-2",
+      "start": 0,
+      "end": 62,
+      "quote": "Owner note: no settled remaining payment evidence is supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Refresh the invoice and distinguish a submission claim from settled payment."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

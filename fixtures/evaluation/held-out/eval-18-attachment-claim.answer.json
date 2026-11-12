@@ -1,0 +1,41 @@
+{
+  "id": "eval-18-attachment-claim",
+  "expectedBlockers": {
+    "questioned_amount": "absent",
+    "missing_document": "present",
+    "payment_timing": "absent"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-18-attachment-claim-source-1",
+      "start": 0,
+      "end": 66,
+      "quote": "The reminder says a report was attached, but I did not receive it."
+    },
+    {
+      "sourceId": "eval-18-attachment-claim-source-2",
+      "start": 0,
+      "end": 84,
+      "quote": "Owner note: report text exists here; no attachment or delivery evidence is supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Verify what was sent outside the app and clarify the missing document."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

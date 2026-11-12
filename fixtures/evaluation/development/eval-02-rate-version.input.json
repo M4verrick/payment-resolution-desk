@@ -1,0 +1,33 @@
+{
+  "id": "eval-02-rate-version",
+  "customerId": "synthetic-customer-02",
+  "contact": "customer02@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-02",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 67500,
+    "recordedCents": 0,
+    "dueCents": 67500,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-02-rate-version-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 02",
+      "text": "Our copy lists a $75 rate; this invoice uses $90 for the same hours."
+    },
+    {
+      "id": "eval-02-rate-version-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 02",
+      "text": "Owner document: draft rate sheet lists $90; signed acceptance not supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

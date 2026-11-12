@@ -1,0 +1,41 @@
+{
+  "id": "eval-07-deposit-handover",
+  "expectedBlockers": {
+    "questioned_amount": "absent",
+    "missing_document": "absent",
+    "payment_timing": "present"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-07-deposit-handover-source-1",
+      "start": 0,
+      "end": 62,
+      "quote": "The $300 was the deposit; the remainder is due after handover."
+    },
+    {
+      "sourceId": "eval-07-deposit-handover-source-2",
+      "start": 0,
+      "end": 68,
+      "quote": "Invoice due date: 2026-10-01. Revised timing agreement not supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Clarify the agreed handover and payment timing."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

@@ -1,0 +1,2332 @@
+{
+  "provenance": "Repeated-set follow-up after serialization-only correction; not a new unseen evaluation. Only synthetic fixture data. Owner semantic acceptance pending.",
+  "summary": {
+    "execution": "astropods",
+    "analyzerRevision": "955fc83eb7ac7675435b0000f3d0accdf324410fabd4de70f8bbc9cd31811e3c",
+    "split": "held-out",
+    "planned": 12,
+    "attempted": 12,
+    "succeeded": 12,
+    "stoppedEarly": false,
+    "modelEvaluation": "completed",
+    "semanticAcceptance": "pending_human_review",
+    "metrics": {
+      "correctLabels": 27,
+      "totalLabels": 36,
+      "exactExpectedSpansCited": 23,
+      "totalExpectedSpans": 24
+    },
+    "latencyMs": {
+      "mean": 6598.416666666667,
+      "p50": 6415,
+      "p95": 7971
+    }
+  },
+  "cases": [
+    {
+      "caseId": "eval-13-tax-question",
+      "input": {
+        "caseId": "eval-13-tax-question",
+        "caseVersion": 1,
+        "contextHash": "2f1b531c285f602a996df47ec46a2f66a7d9db02969d6778381c0f2a3514dd93",
+        "sources": [
+          {
+            "id": "eval-13-tax-question-source-1:v1",
+            "kind": "customer_statement",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic customer 13",
+            "text": "Why is $60 tax added? Our quote showed $1,000 inclusive.",
+            "sourceId": "eval-13-tax-question-source-1",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "22630aeb6a59e4ceddca30960d3064eaecbb299f08f6045a4b9915a85a5b22e1"
+          },
+          {
+            "id": "eval-13-tax-question-source-2:v1",
+            "kind": "owner_document",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic studio 13",
+            "text": "Owner document: quote wording about tax is ambiguous; no agreed tax treatment is supplied.",
+            "sourceId": "eval-13-tax-question-source-2",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "ff2484f5297762aee038b8e33b848c3c2097671085d69e60a357fecc494abe18"
+          }
+        ],
+        "invoice": {
+          "snapshot": {
+            "currency": "USD",
+            "totalCents": 106000,
+            "recordedCents": 0,
+            "dueCents": 106000,
+            "providerStatus": "SENT",
+            "payments": [],
+            "key": {
+              "invoiceId": "SYN-EVAL-13",
+              "merchantId": "synthetic-evaluation-studio",
+              "environment": "fixture"
+            },
+            "dueDate": null,
+            "paymentUrl": null,
+            "fetchedAt": "2026-10-04T00:00:00.000Z",
+            "fingerprint": "6b1b53bff79064cfe8b9f9f26d44963aa0a61eff7b7f9b3ea560fbfcdb9bf66f"
+          },
+          "freshness": "fresh",
+          "error": null
+        },
+        "evidenceCandidates": [
+          {
+            "id": "source:eval-13-tax-question-source-1:v1:0:56",
+            "citation": {
+              "sourceVersionId": "eval-13-tax-question-source-1:v1",
+              "start": 0,
+              "end": 56,
+              "quote": "Why is $60 tax added? Our quote showed $1,000 inclusive."
+            }
+          },
+          {
+            "id": "source:eval-13-tax-question-source-2:v1:0:90",
+            "citation": {
+              "sourceVersionId": "eval-13-tax-question-source-2:v1",
+              "start": 0,
+              "end": 90,
+              "quote": "Owner document: quote wording about tax is ambiguous; no agreed tax treatment is supplied."
+            }
+          },
+          {
+            "id": "invoice:6b1b53bff79064cfe8b9f9f26d44963aa0a61eff7b7f9b3ea560fbfcdb9bf66f:providerStatus",
+            "citation": {
+              "fingerprint": "6b1b53bff79064cfe8b9f9f26d44963aa0a61eff7b7f9b3ea560fbfcdb9bf66f",
+              "field": "providerStatus"
+            }
+          },
+          {
+            "id": "invoice:6b1b53bff79064cfe8b9f9f26d44963aa0a61eff7b7f9b3ea560fbfcdb9bf66f:totalCents",
+            "citation": {
+              "fingerprint": "6b1b53bff79064cfe8b9f9f26d44963aa0a61eff7b7f9b3ea560fbfcdb9bf66f",
+              "field": "totalCents"
+            }
+          },
+          {
+            "id": "invoice:6b1b53bff79064cfe8b9f9f26d44963aa0a61eff7b7f9b3ea560fbfcdb9bf66f:recordedCents",
+            "citation": {
+              "fingerprint": "6b1b53bff79064cfe8b9f9f26d44963aa0a61eff7b7f9b3ea560fbfcdb9bf66f",
+              "field": "recordedCents"
+            }
+          },
+          {
+            "id": "invoice:6b1b53bff79064cfe8b9f9f26d44963aa0a61eff7b7f9b3ea560fbfcdb9bf66f:dueCents",
+            "citation": {
+              "fingerprint": "6b1b53bff79064cfe8b9f9f26d44963aa0a61eff7b7f9b3ea560fbfcdb9bf66f",
+              "field": "dueCents"
+            }
+          },
+          {
+            "id": "invoice:6b1b53bff79064cfe8b9f9f26d44963aa0a61eff7b7f9b3ea560fbfcdb9bf66f:dueDate",
+            "citation": {
+              "fingerprint": "6b1b53bff79064cfe8b9f9f26d44963aa0a61eff7b7f9b3ea560fbfcdb9bf66f",
+              "field": "dueDate"
+            }
+          }
+        ]
+      },
+      "result": {
+        "inputHash": "36cda1b4a0b815c5a4f4e8f8c72cbf22a03da6528a5bc6fae106ee83f9c420ba",
+        "analyzerRevision": "955fc83eb7ac7675435b0000f3d0accdf324410fabd4de70f8bbc9cd31811e3c",
+        "execution": "astropods",
+        "elapsedMs": 6599,
+        "result": {
+          "ok": true,
+          "value": {
+            "blockers": {
+              "questioned_amount": {
+                "label": "present",
+                "supportingCandidateIds": [
+                  "source:eval-13-tax-question-source-1:v1:0:56",
+                  "source:eval-13-tax-question-source-2:v1:0:90"
+                ],
+                "conflictingCandidateIds": []
+              },
+              "missing_document": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": [
+                  "source:eval-13-tax-question-source-1:v1:0:56"
+                ]
+              },
+              "payment_timing": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": [
+                  "source:eval-13-tax-question-source-1:v1:0:56"
+                ]
+              }
+            },
+            "findings": [
+              {
+                "category": "questioned_amount",
+                "claim": "The customer claims the original quote was $1,000 tax-inclusive and disputes the $60 tax added on the invoice (totalling $1,060); the owner's document acknowledges the quote wording on tax is ambiguous, so the agreed tax treatment is unresolved.",
+                "supporting": [
+                  {
+                    "sourceVersionId": "eval-13-tax-question-source-1:v1",
+                    "start": 0,
+                    "end": 56,
+                    "quote": "Why is $60 tax added? Our quote showed $1,000 inclusive."
+                  },
+                  {
+                    "sourceVersionId": "eval-13-tax-question-source-2:v1",
+                    "start": 0,
+                    "end": 90,
+                    "quote": "Owner document: quote wording about tax is ambiguous; no agreed tax treatment is supplied."
+                  },
+                  {
+                    "fingerprint": "6b1b53bff79064cfe8b9f9f26d44963aa0a61eff7b7f9b3ea560fbfcdb9bf66f",
+                    "field": "totalCents"
+                  }
+                ],
+                "conflicting": [],
+                "missing": [
+                  "The original quote document showing exact tax wording",
+                  "Any written confirmation of the agreed tax treatment (inclusive vs. exclusive)"
+                ],
+                "nextStep": "Locate and review the original quote to determine whether the $1,000 price was stated as tax-inclusive or tax-exclusive, then clarify with the customer based on that wording.",
+                "id": "0e99e144-53fa-43c4-921e-f14ea2685b07",
+                "origin": "model",
+                "decision": "unreviewed"
+              }
+            ],
+            "suggestedReply": {
+              "text": "Thank you for getting in touch about invoice SYN-EVAL-13.\n\nWe understand you are querying the $60 tax charge, noting that your quote showed $1,000. We are reviewing the original quote to clarify whether that figure was stated as tax-inclusive or tax-exclusive.\n\nWe will come back to you shortly once we have confirmed the agreed tax treatment. We appreciate your patience and want to make sure any discrepancy is resolved fairly.\n\nPlease let us know if you have a copy of the quote that shows the tax wording, as that would help us resolve this quickly.",
+              "method": "model"
+            },
+            "modelId": "global.anthropic.claude-sonnet-4-6",
+            "runId": "0590a4f1-2906-4859-8134-54c31caada61"
+          }
+        },
+        "metrics": {
+          "correctLabels": 3,
+          "totalLabels": 3,
+          "exactExpectedSpansCited": 2,
+          "totalExpectedSpans": 2
+        }
+      }
+    },
+    {
+      "caseId": "eval-14-milestone-scope",
+      "input": {
+        "caseId": "eval-14-milestone-scope",
+        "caseVersion": 1,
+        "contextHash": "4fa37adad597d448db38a04a43eaf99f20bad005245645e566e3f7641a7d56d4",
+        "sources": [
+          {
+            "id": "eval-14-milestone-scope-source-1:v1",
+            "kind": "customer_statement",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic customer 14",
+            "text": "We expected to pay only the design milestone, not the implementation milestone.",
+            "sourceId": "eval-14-milestone-scope-source-1",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "653389c377fc9cc944468a3401e308a63b79d0964bdbebc5d2384ce23289db80"
+          },
+          {
+            "id": "eval-14-milestone-scope-source-2:v1",
+            "kind": "owner_document",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic studio 14",
+            "text": "Owner note: both stages appear in this invoice; milestone approval not supplied.",
+            "sourceId": "eval-14-milestone-scope-source-2",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "1dd69b0ec60b3fbeef174634914bdf551edef77418fc354883847ee69b069f7c"
+          }
+        ],
+        "invoice": {
+          "snapshot": {
+            "currency": "USD",
+            "totalCents": 150000,
+            "recordedCents": 0,
+            "dueCents": 150000,
+            "providerStatus": "SENT",
+            "payments": [],
+            "key": {
+              "invoiceId": "SYN-EVAL-14",
+              "merchantId": "synthetic-evaluation-studio",
+              "environment": "fixture"
+            },
+            "dueDate": null,
+            "paymentUrl": null,
+            "fetchedAt": "2026-10-04T00:00:00.000Z",
+            "fingerprint": "ec91157fab8412d1465fdff2c063650e5b7cdbd00112ce28e1bee9ee76498300"
+          },
+          "freshness": "fresh",
+          "error": null
+        },
+        "evidenceCandidates": [
+          {
+            "id": "source:eval-14-milestone-scope-source-1:v1:0:79",
+            "citation": {
+              "sourceVersionId": "eval-14-milestone-scope-source-1:v1",
+              "start": 0,
+              "end": 79,
+              "quote": "We expected to pay only the design milestone, not the implementation milestone."
+            }
+          },
+          {
+            "id": "source:eval-14-milestone-scope-source-2:v1:0:80",
+            "citation": {
+              "sourceVersionId": "eval-14-milestone-scope-source-2:v1",
+              "start": 0,
+              "end": 80,
+              "quote": "Owner note: both stages appear in this invoice; milestone approval not supplied."
+            }
+          },
+          {
+            "id": "invoice:ec91157fab8412d1465fdff2c063650e5b7cdbd00112ce28e1bee9ee76498300:providerStatus",
+            "citation": {
+              "fingerprint": "ec91157fab8412d1465fdff2c063650e5b7cdbd00112ce28e1bee9ee76498300",
+              "field": "providerStatus"
+            }
+          },
+          {
+            "id": "invoice:ec91157fab8412d1465fdff2c063650e5b7cdbd00112ce28e1bee9ee76498300:totalCents",
+            "citation": {
+              "fingerprint": "ec91157fab8412d1465fdff2c063650e5b7cdbd00112ce28e1bee9ee76498300",
+              "field": "totalCents"
+            }
+          },
+          {
+            "id": "invoice:ec91157fab8412d1465fdff2c063650e5b7cdbd00112ce28e1bee9ee76498300:recordedCents",
+            "citation": {
+              "fingerprint": "ec91157fab8412d1465fdff2c063650e5b7cdbd00112ce28e1bee9ee76498300",
+              "field": "recordedCents"
+            }
+          },
+          {
+            "id": "invoice:ec91157fab8412d1465fdff2c063650e5b7cdbd00112ce28e1bee9ee76498300:dueCents",
+            "citation": {
+              "fingerprint": "ec91157fab8412d1465fdff2c063650e5b7cdbd00112ce28e1bee9ee76498300",
+              "field": "dueCents"
+            }
+          },
+          {
+            "id": "invoice:ec91157fab8412d1465fdff2c063650e5b7cdbd00112ce28e1bee9ee76498300:dueDate",
+            "citation": {
+              "fingerprint": "ec91157fab8412d1465fdff2c063650e5b7cdbd00112ce28e1bee9ee76498300",
+              "field": "dueDate"
+            }
+          }
+        ]
+      },
+      "result": {
+        "inputHash": "9c87783581f2666541b6e85c75c033d4583624994efe128e5f8b038468f23689",
+        "analyzerRevision": "955fc83eb7ac7675435b0000f3d0accdf324410fabd4de70f8bbc9cd31811e3c",
+        "execution": "astropods",
+        "elapsedMs": 7971,
+        "result": {
+          "ok": true,
+          "value": {
+            "blockers": {
+              "questioned_amount": {
+                "label": "present",
+                "supportingCandidateIds": [
+                  "source:eval-14-milestone-scope-source-1:v1:0:79",
+                  "source:eval-14-milestone-scope-source-2:v1:0:80"
+                ],
+                "conflictingCandidateIds": []
+              },
+              "missing_document": {
+                "label": "present",
+                "supportingCandidateIds": [
+                  "source:eval-14-milestone-scope-source-2:v1:0:80"
+                ],
+                "conflictingCandidateIds": []
+              },
+              "payment_timing": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": [
+                  "source:eval-14-milestone-scope-source-1:v1:0:79"
+                ]
+              }
+            },
+            "findings": [
+              {
+                "category": "questioned_amount",
+                "claim": "The customer claims (unverified) they agreed to pay only the design milestone, disputing the implementation milestone charges also included in the $1,500.00 invoice.",
+                "supporting": [
+                  {
+                    "sourceVersionId": "eval-14-milestone-scope-source-1:v1",
+                    "start": 0,
+                    "end": 79,
+                    "quote": "We expected to pay only the design milestone, not the implementation milestone."
+                  },
+                  {
+                    "fingerprint": "ec91157fab8412d1465fdff2c063650e5b7cdbd00112ce28e1bee9ee76498300",
+                    "field": "totalCents"
+                  }
+                ],
+                "conflicting": [],
+                "missing": [
+                  "Signed contract or statement of work showing which milestones were agreed and their respective amounts",
+                  "Any written authorization from the customer approving the implementation milestone"
+                ],
+                "nextStep": "Request the customer provide the specific contract clause or communication showing only the design milestone was in scope; compare against your own agreement records to identify which charges are disputed.",
+                "id": "de955046-241a-4fa0-a091-b2b41927429f",
+                "origin": "model",
+                "decision": "unreviewed"
+              },
+              {
+                "category": "missing_document",
+                "claim": "The owner notes that milestone approval for the implementation stage has not been supplied, creating an administrative blocker to resolving the dispute.",
+                "supporting": [
+                  {
+                    "sourceVersionId": "eval-14-milestone-scope-source-2:v1",
+                    "start": 0,
+                    "end": 80,
+                    "quote": "Owner note: both stages appear in this invoice; milestone approval not supplied."
+                  }
+                ],
+                "conflicting": [],
+                "missing": [
+                  "Signed or written milestone approval (or change order) authorizing the implementation stage"
+                ],
+                "nextStep": "Locate any written approval, change order, or email thread in which the customer authorized the implementation milestone, and share it with the customer to support the full invoice amount.",
+                "id": "28474f76-e9b0-43cc-8b5d-977a1aabbdc9",
+                "origin": "model",
+                "decision": "unreviewed"
+              }
+            ],
+            "suggestedReply": {
+              "text": "Thank you for getting in touch regarding invoice SYN-EVAL-14.\n\nWe understand you believe payment is due only for the design milestone. Our records show this invoice covers both the design and implementation milestones as originally scoped.\n\nTo help us resolve this quickly, could you please share the specific contract clause or communication that limited your payment obligation to the design milestone only? In the meantime, we are also reviewing our records for any milestone approval documentation related to the implementation stage.\n\nWe would like to work through this with you and reach a resolution as soon as possible. Please let us know if you have any questions.",
+              "method": "model"
+            },
+            "modelId": "global.anthropic.claude-sonnet-4-6",
+            "runId": "e6f4b850-c9bf-467a-aec7-45eb66eefbb4"
+          }
+        },
+        "metrics": {
+          "correctLabels": 2,
+          "totalLabels": 3,
+          "exactExpectedSpansCited": 2,
+          "totalExpectedSpans": 2
+        }
+      }
+    },
+    {
+      "caseId": "eval-15-old-copy-approval",
+      "input": {
+        "caseId": "eval-15-old-copy-approval",
+        "caseVersion": 1,
+        "contextHash": "03c1577498f4cd90af8f63868db21fbed1042c2897128f03a996bd4f3978429a",
+        "sources": [
+          {
+            "id": "eval-15-old-copy-approval-source-1:v1",
+            "kind": "customer_statement",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic customer 15",
+            "text": "I am looking at an $800 copy and question the additional $120.",
+            "sourceId": "eval-15-old-copy-approval-source-1",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "052c6bf6666324b470f5ce64f292ea2be5bdb22223145e07a2fa1c3978b1482c"
+          },
+          {
+            "id": "eval-15-old-copy-approval-source-2:v1",
+            "kind": "owner_document",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic studio 15",
+            "text": "Owner document: a supplied email states approval of the $120 addition; authenticity not verified.",
+            "sourceId": "eval-15-old-copy-approval-source-2",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "81b0013786d61231a0faae33f449a8bdf4fa216010953f2c856f0a723c035d80"
+          }
+        ],
+        "invoice": {
+          "snapshot": {
+            "currency": "USD",
+            "totalCents": 92000,
+            "recordedCents": 0,
+            "dueCents": 92000,
+            "providerStatus": "SENT",
+            "payments": [],
+            "key": {
+              "invoiceId": "SYN-EVAL-15",
+              "merchantId": "synthetic-evaluation-studio",
+              "environment": "fixture"
+            },
+            "dueDate": null,
+            "paymentUrl": null,
+            "fetchedAt": "2026-10-04T00:00:00.000Z",
+            "fingerprint": "c3f653b8a26333796f97d89261a5eb63478169dfee945ae01110d934218f8437"
+          },
+          "freshness": "fresh",
+          "error": null
+        },
+        "evidenceCandidates": [
+          {
+            "id": "source:eval-15-old-copy-approval-source-1:v1:0:62",
+            "citation": {
+              "sourceVersionId": "eval-15-old-copy-approval-source-1:v1",
+              "start": 0,
+              "end": 62,
+              "quote": "I am looking at an $800 copy and question the additional $120."
+            }
+          },
+          {
+            "id": "source:eval-15-old-copy-approval-source-2:v1:0:97",
+            "citation": {
+              "sourceVersionId": "eval-15-old-copy-approval-source-2:v1",
+              "start": 0,
+              "end": 97,
+              "quote": "Owner document: a supplied email states approval of the $120 addition; authenticity not verified."
+            }
+          },
+          {
+            "id": "invoice:c3f653b8a26333796f97d89261a5eb63478169dfee945ae01110d934218f8437:providerStatus",
+            "citation": {
+              "fingerprint": "c3f653b8a26333796f97d89261a5eb63478169dfee945ae01110d934218f8437",
+              "field": "providerStatus"
+            }
+          },
+          {
+            "id": "invoice:c3f653b8a26333796f97d89261a5eb63478169dfee945ae01110d934218f8437:totalCents",
+            "citation": {
+              "fingerprint": "c3f653b8a26333796f97d89261a5eb63478169dfee945ae01110d934218f8437",
+              "field": "totalCents"
+            }
+          },
+          {
+            "id": "invoice:c3f653b8a26333796f97d89261a5eb63478169dfee945ae01110d934218f8437:recordedCents",
+            "citation": {
+              "fingerprint": "c3f653b8a26333796f97d89261a5eb63478169dfee945ae01110d934218f8437",
+              "field": "recordedCents"
+            }
+          },
+          {
+            "id": "invoice:c3f653b8a26333796f97d89261a5eb63478169dfee945ae01110d934218f8437:dueCents",
+            "citation": {
+              "fingerprint": "c3f653b8a26333796f97d89261a5eb63478169dfee945ae01110d934218f8437",
+              "field": "dueCents"
+            }
+          },
+          {
+            "id": "invoice:c3f653b8a26333796f97d89261a5eb63478169dfee945ae01110d934218f8437:dueDate",
+            "citation": {
+              "fingerprint": "c3f653b8a26333796f97d89261a5eb63478169dfee945ae01110d934218f8437",
+              "field": "dueDate"
+            }
+          }
+        ]
+      },
+      "result": {
+        "inputHash": "1bef30e580c1634993dc4e600170921c0e02297ce86094a45689afde65876f25",
+        "analyzerRevision": "955fc83eb7ac7675435b0000f3d0accdf324410fabd4de70f8bbc9cd31811e3c",
+        "execution": "astropods",
+        "elapsedMs": 6579,
+        "result": {
+          "ok": true,
+          "value": {
+            "blockers": {
+              "questioned_amount": {
+                "label": "present",
+                "supportingCandidateIds": [
+                  "source:eval-15-old-copy-approval-source-1:v1:0:62"
+                ],
+                "conflictingCandidateIds": [
+                  "source:eval-15-old-copy-approval-source-2:v1:0:97"
+                ]
+              },
+              "missing_document": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": []
+              },
+              "payment_timing": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": []
+              }
+            },
+            "findings": [
+              {
+                "category": "questioned_amount",
+                "claim": "The customer acknowledges the base $800 charge but disputes the additional $120, questioning its basis; an owner document claims an email approval of the $120 exists, but its authenticity is explicitly unverified.",
+                "supporting": [
+                  {
+                    "sourceVersionId": "eval-15-old-copy-approval-source-1:v1",
+                    "start": 0,
+                    "end": 62,
+                    "quote": "I am looking at an $800 copy and question the additional $120."
+                  }
+                ],
+                "conflicting": [
+                  {
+                    "sourceVersionId": "eval-15-old-copy-approval-source-2:v1",
+                    "start": 0,
+                    "end": 97,
+                    "quote": "Owner document: a supplied email states approval of the $120 addition; authenticity not verified."
+                  }
+                ],
+                "missing": [
+                  "Verified written authorization or approval from the customer for the $120 additional charge",
+                  "Breakdown or explanation of what the $120 addition covers (e.g., extra scope, fees, expenses)"
+                ],
+                "nextStep": "Provide the customer with a clear explanation of what the $120 charge represents and, if available, locate and share verified evidence of their prior approval (e.g., a confirmed email or signed change order).",
+                "id": "a3c7b2b3-6366-4835-8149-6d1a1815fc48",
+                "origin": "model",
+                "decision": "unreviewed"
+              }
+            ],
+            "suggestedReply": {
+              "text": "Thank you for reaching out about invoice SYN-EVAL-15. We understand you have a question regarding the additional $120 charge beyond the $800 base amount.\n\nCould you please let us know the specific concern \u2014 for example, whether you were not informed of this charge in advance, or whether the description is unclear? On our side, we have records indicating this addition was approved, but we want to make sure we have the right documentation to share with you.\n\nPlease let us know how you would like to proceed and we will work to resolve this promptly. We have not made any changes to the invoice at this time.",
+              "method": "model"
+            },
+            "modelId": "global.anthropic.claude-sonnet-4-6",
+            "runId": "fdc3b3fd-a39c-433a-99de-c0a992fe2248"
+          }
+        },
+        "metrics": {
+          "correctLabels": 3,
+          "totalLabels": 3,
+          "exactExpectedSpansCited": 2,
+          "totalExpectedSpans": 2
+        }
+      }
+    },
+    {
+      "caseId": "eval-16-delivery-evidence",
+      "input": {
+        "caseId": "eval-16-delivery-evidence",
+        "caseVersion": 1,
+        "contextHash": "6f62b02c101b0801d8336468ed54ca85c591aa8c114e615dbce6b762b477b261",
+        "sources": [
+          {
+            "id": "eval-16-delivery-evidence-source-1:v1",
+            "kind": "customer_statement",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic customer 16",
+            "text": "Our team needs the delivery record and project identifier PX-901.",
+            "sourceId": "eval-16-delivery-evidence-source-1",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "b1ebb43a00aab788027f00fa043b41fa66bc8227ea46640f421868b3a96c46d5"
+          },
+          {
+            "id": "eval-16-delivery-evidence-source-2:v1",
+            "kind": "owner_document",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic studio 16",
+            "text": "Owner document: invoice shows PX-910. Delivery record is not supplied.",
+            "sourceId": "eval-16-delivery-evidence-source-2",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "65c3de140f49f3acc0bdacfbb6b51a1b7e03fa510ebc358a667d538720eb3fc5"
+          }
+        ],
+        "invoice": {
+          "snapshot": {
+            "currency": "USD",
+            "totalCents": 43000,
+            "recordedCents": 0,
+            "dueCents": 43000,
+            "providerStatus": "SENT",
+            "payments": [],
+            "key": {
+              "invoiceId": "SYN-EVAL-16",
+              "merchantId": "synthetic-evaluation-studio",
+              "environment": "fixture"
+            },
+            "dueDate": null,
+            "paymentUrl": null,
+            "fetchedAt": "2026-10-04T00:00:00.000Z",
+            "fingerprint": "75f6311e7b2f50e2dd23a04c20dfe8d62466f0186483588aa420e5a38bbdb6d9"
+          },
+          "freshness": "fresh",
+          "error": null
+        },
+        "evidenceCandidates": [
+          {
+            "id": "source:eval-16-delivery-evidence-source-1:v1:0:65",
+            "citation": {
+              "sourceVersionId": "eval-16-delivery-evidence-source-1:v1",
+              "start": 0,
+              "end": 65,
+              "quote": "Our team needs the delivery record and project identifier PX-901."
+            }
+          },
+          {
+            "id": "source:eval-16-delivery-evidence-source-2:v1:0:70",
+            "citation": {
+              "sourceVersionId": "eval-16-delivery-evidence-source-2:v1",
+              "start": 0,
+              "end": 70,
+              "quote": "Owner document: invoice shows PX-910. Delivery record is not supplied."
+            }
+          },
+          {
+            "id": "invoice:75f6311e7b2f50e2dd23a04c20dfe8d62466f0186483588aa420e5a38bbdb6d9:providerStatus",
+            "citation": {
+              "fingerprint": "75f6311e7b2f50e2dd23a04c20dfe8d62466f0186483588aa420e5a38bbdb6d9",
+              "field": "providerStatus"
+            }
+          },
+          {
+            "id": "invoice:75f6311e7b2f50e2dd23a04c20dfe8d62466f0186483588aa420e5a38bbdb6d9:totalCents",
+            "citation": {
+              "fingerprint": "75f6311e7b2f50e2dd23a04c20dfe8d62466f0186483588aa420e5a38bbdb6d9",
+              "field": "totalCents"
+            }
+          },
+          {
+            "id": "invoice:75f6311e7b2f50e2dd23a04c20dfe8d62466f0186483588aa420e5a38bbdb6d9:recordedCents",
+            "citation": {
+              "fingerprint": "75f6311e7b2f50e2dd23a04c20dfe8d62466f0186483588aa420e5a38bbdb6d9",
+              "field": "recordedCents"
+            }
+          },
+          {
+            "id": "invoice:75f6311e7b2f50e2dd23a04c20dfe8d62466f0186483588aa420e5a38bbdb6d9:dueCents",
+            "citation": {
+              "fingerprint": "75f6311e7b2f50e2dd23a04c20dfe8d62466f0186483588aa420e5a38bbdb6d9",
+              "field": "dueCents"
+            }
+          },
+          {
+            "id": "invoice:75f6311e7b2f50e2dd23a04c20dfe8d62466f0186483588aa420e5a38bbdb6d9:dueDate",
+            "citation": {
+              "fingerprint": "75f6311e7b2f50e2dd23a04c20dfe8d62466f0186483588aa420e5a38bbdb6d9",
+              "field": "dueDate"
+            }
+          }
+        ]
+      },
+      "result": {
+        "inputHash": "3f00c6daaaec7cd9b65f0de67187fcbcd20cd708f57209a7f9310b77c83b3550",
+        "analyzerRevision": "955fc83eb7ac7675435b0000f3d0accdf324410fabd4de70f8bbc9cd31811e3c",
+        "execution": "astropods",
+        "elapsedMs": 6032,
+        "result": {
+          "ok": true,
+          "value": {
+            "blockers": {
+              "questioned_amount": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": []
+              },
+              "missing_document": {
+                "label": "present",
+                "supportingCandidateIds": [
+                  "source:eval-16-delivery-evidence-source-1:v1:0:65",
+                  "source:eval-16-delivery-evidence-source-2:v1:0:70"
+                ],
+                "conflictingCandidateIds": []
+              },
+              "payment_timing": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": []
+              }
+            },
+            "findings": [
+              {
+                "category": "missing_document",
+                "claim": "The customer has requested two documents before processing payment: a delivery record and a project identifier \u2014 but the customer quotes PX-901 while the owner's invoice records PX-910, indicating a possible project ID mismatch in addition to the missing delivery record.",
+                "supporting": [
+                  {
+                    "sourceVersionId": "eval-16-delivery-evidence-source-1:v1",
+                    "start": 0,
+                    "end": 65,
+                    "quote": "Our team needs the delivery record and project identifier PX-901."
+                  },
+                  {
+                    "sourceVersionId": "eval-16-delivery-evidence-source-2:v1",
+                    "start": 0,
+                    "end": 70,
+                    "quote": "Owner document: invoice shows PX-910. Delivery record is not supplied."
+                  }
+                ],
+                "conflicting": [],
+                "missing": [
+                  "Delivery record confirming the goods/services were received",
+                  "Clarification of whether the correct project identifier is PX-901 (customer's reference) or PX-910 (invoice reference)"
+                ],
+                "nextStep": "Confirm the correct project identifier (PX-901 vs. PX-910) and provide the delivery record to the customer so they can process payment.",
+                "id": "be04e33b-e6ad-475b-8608-713cb67e4fad",
+                "origin": "model",
+                "decision": "unreviewed"
+              }
+            ],
+            "suggestedReply": {
+              "text": "Thank you for reaching out regarding invoice SYN-EVAL-16.\n\nWe note two items you have raised: (1) a request for the delivery record, and (2) the project identifier. You have referenced PX-901; however, our invoice currently shows PX-910. Could you please confirm which identifier is correct so we can ensure our records align?\n\nWe will work on providing the delivery record promptly once we have clarity on the project identifier.\n\nPlease let us know if you need any further information to process this invoice. We appreciate your assistance in resolving this.",
+              "method": "model"
+            },
+            "modelId": "global.anthropic.claude-sonnet-4-6",
+            "runId": "fc6fe861-c63f-434d-9b24-e47ce5d3b593"
+          }
+        },
+        "metrics": {
+          "correctLabels": 3,
+          "totalLabels": 3,
+          "exactExpectedSpansCited": 2,
+          "totalExpectedSpans": 2
+        }
+      }
+    },
+    {
+      "caseId": "eval-17-completion-copy",
+      "input": {
+        "caseId": "eval-17-completion-copy",
+        "caseVersion": 1,
+        "contextHash": "525bca7aa6e19f84281bfae6d1e86f81e4d3cdf720577cc1ae9163106f7debc6",
+        "sources": [
+          {
+            "id": "eval-17-completion-copy-source-1:v1",
+            "kind": "customer_statement",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic customer 17",
+            "text": "Can you send the signed copy of the final inspection checklist?",
+            "sourceId": "eval-17-completion-copy-source-1",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "70e85cc1166d2bad30c6d9e955fbb134b1dcb1769fc6dd179ca8253b58088c6a"
+          },
+          {
+            "id": "eval-17-completion-copy-source-2:v1",
+            "kind": "owner_document",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic studio 17",
+            "text": "Owner document: Final inspection checklist\r\nClient approval: not supplied\r\nChecklist prepared \ud83d\ude00",
+            "sourceId": "eval-17-completion-copy-source-2",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "6e4a7ad6ffd56fdc94bd2edd1efe7f60bebfd53b08af9aac95e93a43f662286d"
+          }
+        ],
+        "invoice": {
+          "snapshot": {
+            "currency": "USD",
+            "totalCents": 64000,
+            "recordedCents": 0,
+            "dueCents": 64000,
+            "providerStatus": "SENT",
+            "payments": [],
+            "key": {
+              "invoiceId": "SYN-EVAL-17",
+              "merchantId": "synthetic-evaluation-studio",
+              "environment": "fixture"
+            },
+            "dueDate": null,
+            "paymentUrl": null,
+            "fetchedAt": "2026-10-04T00:00:00.000Z",
+            "fingerprint": "5dabd32a240886e52ad7ef62c97982f16137a990c324cd30cb50d3d29c733275"
+          },
+          "freshness": "fresh",
+          "error": null
+        },
+        "evidenceCandidates": [
+          {
+            "id": "source:eval-17-completion-copy-source-1:v1:0:63",
+            "citation": {
+              "sourceVersionId": "eval-17-completion-copy-source-1:v1",
+              "start": 0,
+              "end": 63,
+              "quote": "Can you send the signed copy of the final inspection checklist?"
+            }
+          },
+          {
+            "id": "source:eval-17-completion-copy-source-2:v1:0:42",
+            "citation": {
+              "sourceVersionId": "eval-17-completion-copy-source-2:v1",
+              "start": 0,
+              "end": 42,
+              "quote": "Owner document: Final inspection checklist"
+            }
+          },
+          {
+            "id": "source:eval-17-completion-copy-source-2:v1:44:73",
+            "citation": {
+              "sourceVersionId": "eval-17-completion-copy-source-2:v1",
+              "start": 44,
+              "end": 73,
+              "quote": "Client approval: not supplied"
+            }
+          },
+          {
+            "id": "source:eval-17-completion-copy-source-2:v1:75:96",
+            "citation": {
+              "sourceVersionId": "eval-17-completion-copy-source-2:v1",
+              "start": 75,
+              "end": 96,
+              "quote": "Checklist prepared \ud83d\ude00"
+            }
+          },
+          {
+            "id": "invoice:5dabd32a240886e52ad7ef62c97982f16137a990c324cd30cb50d3d29c733275:providerStatus",
+            "citation": {
+              "fingerprint": "5dabd32a240886e52ad7ef62c97982f16137a990c324cd30cb50d3d29c733275",
+              "field": "providerStatus"
+            }
+          },
+          {
+            "id": "invoice:5dabd32a240886e52ad7ef62c97982f16137a990c324cd30cb50d3d29c733275:totalCents",
+            "citation": {
+              "fingerprint": "5dabd32a240886e52ad7ef62c97982f16137a990c324cd30cb50d3d29c733275",
+              "field": "totalCents"
+            }
+          },
+          {
+            "id": "invoice:5dabd32a240886e52ad7ef62c97982f16137a990c324cd30cb50d3d29c733275:recordedCents",
+            "citation": {
+              "fingerprint": "5dabd32a240886e52ad7ef62c97982f16137a990c324cd30cb50d3d29c733275",
+              "field": "recordedCents"
+            }
+          },
+          {
+            "id": "invoice:5dabd32a240886e52ad7ef62c97982f16137a990c324cd30cb50d3d29c733275:dueCents",
+            "citation": {
+              "fingerprint": "5dabd32a240886e52ad7ef62c97982f16137a990c324cd30cb50d3d29c733275",
+              "field": "dueCents"
+            }
+          },
+          {
+            "id": "invoice:5dabd32a240886e52ad7ef62c97982f16137a990c324cd30cb50d3d29c733275:dueDate",
+            "citation": {
+              "fingerprint": "5dabd32a240886e52ad7ef62c97982f16137a990c324cd30cb50d3d29c733275",
+              "field": "dueDate"
+            }
+          }
+        ]
+      },
+      "result": {
+        "inputHash": "58582d3b7316ccabd7fb3bc5fba91da5fc4e79725525fd8a90560b59832d2a71",
+        "analyzerRevision": "955fc83eb7ac7675435b0000f3d0accdf324410fabd4de70f8bbc9cd31811e3c",
+        "execution": "astropods",
+        "elapsedMs": 5967,
+        "result": {
+          "ok": true,
+          "value": {
+            "blockers": {
+              "questioned_amount": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": [
+                  "source:eval-17-completion-copy-source-1:v1:0:63"
+                ]
+              },
+              "missing_document": {
+                "label": "present",
+                "supportingCandidateIds": [
+                  "source:eval-17-completion-copy-source-1:v1:0:63",
+                  "source:eval-17-completion-copy-source-2:v1:44:73"
+                ],
+                "conflictingCandidateIds": []
+              },
+              "payment_timing": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": [
+                  "source:eval-17-completion-copy-source-1:v1:0:63"
+                ]
+              }
+            },
+            "findings": [
+              {
+                "category": "missing_document",
+                "claim": "The customer has expressly requested the signed copy of the final inspection checklist; the owner's record shows the checklist was prepared but client approval/signature has not been supplied.",
+                "supporting": [
+                  {
+                    "sourceVersionId": "eval-17-completion-copy-source-1:v1",
+                    "start": 0,
+                    "end": 63,
+                    "quote": "Can you send the signed copy of the final inspection checklist?"
+                  },
+                  {
+                    "sourceVersionId": "eval-17-completion-copy-source-2:v1",
+                    "start": 44,
+                    "end": 73,
+                    "quote": "Client approval: not supplied"
+                  },
+                  {
+                    "sourceVersionId": "eval-17-completion-copy-source-2:v1",
+                    "start": 75,
+                    "end": 96,
+                    "quote": "Checklist prepared \ud83d\ude00"
+                  }
+                ],
+                "conflicting": [],
+                "missing": [
+                  "Signed/client-approved copy of the final inspection checklist"
+                ],
+                "nextStep": "Locate the signed final inspection checklist and provide it to the customer, or clarify what signature or approval is still outstanding so both parties can agree on how to close this out.",
+                "id": "fa780e58-4d51-4d6e-a63e-dcd63d27d0ad",
+                "origin": "model",
+                "decision": "unreviewed"
+              }
+            ],
+            "suggestedReply": {
+              "text": "Hi,\n\nThank you for your message. We understand you are requesting the signed copy of the final inspection checklist in connection with invoice SYN-EVAL-17 ($640.00 outstanding).\n\nWe are looking into the status of that document and will follow up with you shortly. Could you let us know if there is anything else required on your end before payment can be processed?\n\nPlease feel free to reach out with any questions.\n\n[Owner \u2013 please review, add the document or clarify its status before sending]",
+              "method": "model"
+            },
+            "modelId": "global.anthropic.claude-sonnet-4-6",
+            "runId": "9be00f0a-e487-4ea5-9239-0d31909d3b36"
+          }
+        },
+        "metrics": {
+          "correctLabels": 3,
+          "totalLabels": 3,
+          "exactExpectedSpansCited": 1,
+          "totalExpectedSpans": 2
+        }
+      }
+    },
+    {
+      "caseId": "eval-18-attachment-claim",
+      "input": {
+        "caseId": "eval-18-attachment-claim",
+        "caseVersion": 1,
+        "contextHash": "7372d99e920fdb65201c0e783ca7744853a8913a888319e8f4a513eb55fec16a",
+        "sources": [
+          {
+            "id": "eval-18-attachment-claim-source-1:v1",
+            "kind": "customer_statement",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic customer 18",
+            "text": "The reminder says a report was attached, but I did not receive it.",
+            "sourceId": "eval-18-attachment-claim-source-1",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "848673dad3bb9b0a7dafde4964cd654afe87a44ecbe2f6ddfb4cd857d055f7fd"
+          },
+          {
+            "id": "eval-18-attachment-claim-source-2:v1",
+            "kind": "owner_document",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic studio 18",
+            "text": "Owner note: report text exists here; no attachment or delivery evidence is supplied.",
+            "sourceId": "eval-18-attachment-claim-source-2",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "787a0bb5bb76f0f5302b8e6cc3f7b3e857c14d3e4f9f07903b6bd9077dacf858"
+          }
+        ],
+        "invoice": {
+          "snapshot": {
+            "currency": "USD",
+            "totalCents": 48000,
+            "recordedCents": 0,
+            "dueCents": 48000,
+            "providerStatus": "SENT",
+            "payments": [],
+            "key": {
+              "invoiceId": "SYN-EVAL-18",
+              "merchantId": "synthetic-evaluation-studio",
+              "environment": "fixture"
+            },
+            "dueDate": null,
+            "paymentUrl": null,
+            "fetchedAt": "2026-10-04T00:00:00.000Z",
+            "fingerprint": "880ece5eeaa775d08dbef894e4c7194898128849e99bc41b58411ac261500b8a"
+          },
+          "freshness": "fresh",
+          "error": null
+        },
+        "evidenceCandidates": [
+          {
+            "id": "source:eval-18-attachment-claim-source-1:v1:0:66",
+            "citation": {
+              "sourceVersionId": "eval-18-attachment-claim-source-1:v1",
+              "start": 0,
+              "end": 66,
+              "quote": "The reminder says a report was attached, but I did not receive it."
+            }
+          },
+          {
+            "id": "source:eval-18-attachment-claim-source-2:v1:0:84",
+            "citation": {
+              "sourceVersionId": "eval-18-attachment-claim-source-2:v1",
+              "start": 0,
+              "end": 84,
+              "quote": "Owner note: report text exists here; no attachment or delivery evidence is supplied."
+            }
+          },
+          {
+            "id": "invoice:880ece5eeaa775d08dbef894e4c7194898128849e99bc41b58411ac261500b8a:providerStatus",
+            "citation": {
+              "fingerprint": "880ece5eeaa775d08dbef894e4c7194898128849e99bc41b58411ac261500b8a",
+              "field": "providerStatus"
+            }
+          },
+          {
+            "id": "invoice:880ece5eeaa775d08dbef894e4c7194898128849e99bc41b58411ac261500b8a:totalCents",
+            "citation": {
+              "fingerprint": "880ece5eeaa775d08dbef894e4c7194898128849e99bc41b58411ac261500b8a",
+              "field": "totalCents"
+            }
+          },
+          {
+            "id": "invoice:880ece5eeaa775d08dbef894e4c7194898128849e99bc41b58411ac261500b8a:recordedCents",
+            "citation": {
+              "fingerprint": "880ece5eeaa775d08dbef894e4c7194898128849e99bc41b58411ac261500b8a",
+              "field": "recordedCents"
+            }
+          },
+          {
+            "id": "invoice:880ece5eeaa775d08dbef894e4c7194898128849e99bc41b58411ac261500b8a:dueCents",
+            "citation": {
+              "fingerprint": "880ece5eeaa775d08dbef894e4c7194898128849e99bc41b58411ac261500b8a",
+              "field": "dueCents"
+            }
+          },
+          {
+            "id": "invoice:880ece5eeaa775d08dbef894e4c7194898128849e99bc41b58411ac261500b8a:dueDate",
+            "citation": {
+              "fingerprint": "880ece5eeaa775d08dbef894e4c7194898128849e99bc41b58411ac261500b8a",
+              "field": "dueDate"
+            }
+          }
+        ]
+      },
+      "result": {
+        "inputHash": "0638e6cd8a98e42c746b6e39d4cd877d2d79837ce7af5d1f9d28cac32ded9eb3",
+        "analyzerRevision": "955fc83eb7ac7675435b0000f3d0accdf324410fabd4de70f8bbc9cd31811e3c",
+        "execution": "astropods",
+        "elapsedMs": 6415,
+        "result": {
+          "ok": true,
+          "value": {
+            "blockers": {
+              "questioned_amount": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": [
+                  "source:eval-18-attachment-claim-source-1:v1:0:66"
+                ]
+              },
+              "missing_document": {
+                "label": "present",
+                "supportingCandidateIds": [
+                  "source:eval-18-attachment-claim-source-1:v1:0:66",
+                  "source:eval-18-attachment-claim-source-2:v1:0:84"
+                ],
+                "conflictingCandidateIds": []
+              },
+              "payment_timing": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": []
+              }
+            },
+            "findings": [
+              {
+                "category": "missing_document",
+                "claim": "The customer states they did not receive the report that the payment reminder claimed was attached, and no delivery evidence for that attachment is supplied in the owner's records.",
+                "supporting": [
+                  {
+                    "sourceVersionId": "eval-18-attachment-claim-source-1:v1",
+                    "start": 0,
+                    "end": 66,
+                    "quote": "The reminder says a report was attached, but I did not receive it."
+                  },
+                  {
+                    "sourceVersionId": "eval-18-attachment-claim-source-2:v1",
+                    "start": 0,
+                    "end": 84,
+                    "quote": "Owner note: report text exists here; no attachment or delivery evidence is supplied."
+                  }
+                ],
+                "conflicting": [],
+                "missing": [
+                  "Proof of delivery or transmission of the report attachment (e.g., sent email with attachment, delivery receipt, or link to the document)"
+                ],
+                "nextStep": "Resend the report directly to the customer with a confirmed delivery method, then follow up to verify receipt before requesting payment.",
+                "id": "8886bfa5-91a7-408b-8f09-5244933f38c0",
+                "origin": "model",
+                "decision": "unreviewed"
+              }
+            ],
+            "suggestedReply": {
+              "text": "Thank you for letting us know. We apologise if the report did not reach you \u2014 we want to make sure you have everything you need to review this invoice.\n\nWe will resend the report to you directly and ask that you confirm receipt once it arrives. Please let us know if the correct email address to use is the one we have on file, or if you would prefer a different delivery method.\n\nOnce you have had a chance to review the report, we would appreciate your guidance on next steps regarding invoice SYN-EVAL-18 for $480.00. Please do not hesitate to reach out with any questions.",
+              "method": "model"
+            },
+            "modelId": "global.anthropic.claude-sonnet-4-6",
+            "runId": "121d28a4-ddbc-4f71-9e52-5c76d276dc7d"
+          }
+        },
+        "metrics": {
+          "correctLabels": 3,
+          "totalLabels": 3,
+          "exactExpectedSpansCited": 2,
+          "totalExpectedSpans": 2
+        }
+      }
+    },
+    {
+      "caseId": "eval-19-new-payment-promise",
+      "input": {
+        "caseId": "eval-19-new-payment-promise",
+        "caseVersion": 1,
+        "contextHash": "2409e8fcf6eac11468b4aa0958b75361099feaf75ca1f460c2eb015e6ceb393d",
+        "sources": [
+          {
+            "id": "eval-19-new-payment-promise-source-1:v1",
+            "kind": "customer_statement",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic customer 19",
+            "text": "The deposit is paid. I will pay the remaining $850 next Friday.",
+            "sourceId": "eval-19-new-payment-promise-source-1",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "3c1045ba03ee84f8aad3d8e6eeef46cf0f6cfeb553c7b87d618df8b45612a76d"
+          },
+          {
+            "id": "eval-19-new-payment-promise-source-2:v1",
+            "kind": "owner_document",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic studio 19",
+            "text": "Invoice due date: 2026-10-01. No agreed extension is supplied.",
+            "sourceId": "eval-19-new-payment-promise-source-2",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "0185451f015c29d80bc100e4b7b4dd7b43a576e28912ce72215ec404480481f0"
+          }
+        ],
+        "invoice": {
+          "snapshot": {
+            "currency": "USD",
+            "totalCents": 110000,
+            "recordedCents": 25000,
+            "dueCents": 85000,
+            "providerStatus": "PARTIALLY_PAID",
+            "payments": [
+              {
+                "id": "synthetic-entry-19",
+                "amountCents": 25000,
+                "origin": "PAYPAL",
+                "reportedStatus": null
+              }
+            ],
+            "key": {
+              "invoiceId": "SYN-EVAL-19",
+              "merchantId": "synthetic-evaluation-studio",
+              "environment": "fixture"
+            },
+            "dueDate": null,
+            "paymentUrl": null,
+            "fetchedAt": "2026-10-04T00:00:00.000Z",
+            "fingerprint": "6b53181b5e2ab902742b342498ef85b59aa3abb76f6d7362dbaf7b2d69e5995b"
+          },
+          "freshness": "fresh",
+          "error": null
+        },
+        "evidenceCandidates": [
+          {
+            "id": "source:eval-19-new-payment-promise-source-1:v1:0:63",
+            "citation": {
+              "sourceVersionId": "eval-19-new-payment-promise-source-1:v1",
+              "start": 0,
+              "end": 63,
+              "quote": "The deposit is paid. I will pay the remaining $850 next Friday."
+            }
+          },
+          {
+            "id": "source:eval-19-new-payment-promise-source-2:v1:0:62",
+            "citation": {
+              "sourceVersionId": "eval-19-new-payment-promise-source-2:v1",
+              "start": 0,
+              "end": 62,
+              "quote": "Invoice due date: 2026-10-01. No agreed extension is supplied."
+            }
+          },
+          {
+            "id": "invoice:6b53181b5e2ab902742b342498ef85b59aa3abb76f6d7362dbaf7b2d69e5995b:providerStatus",
+            "citation": {
+              "fingerprint": "6b53181b5e2ab902742b342498ef85b59aa3abb76f6d7362dbaf7b2d69e5995b",
+              "field": "providerStatus"
+            }
+          },
+          {
+            "id": "invoice:6b53181b5e2ab902742b342498ef85b59aa3abb76f6d7362dbaf7b2d69e5995b:totalCents",
+            "citation": {
+              "fingerprint": "6b53181b5e2ab902742b342498ef85b59aa3abb76f6d7362dbaf7b2d69e5995b",
+              "field": "totalCents"
+            }
+          },
+          {
+            "id": "invoice:6b53181b5e2ab902742b342498ef85b59aa3abb76f6d7362dbaf7b2d69e5995b:recordedCents",
+            "citation": {
+              "fingerprint": "6b53181b5e2ab902742b342498ef85b59aa3abb76f6d7362dbaf7b2d69e5995b",
+              "field": "recordedCents"
+            }
+          },
+          {
+            "id": "invoice:6b53181b5e2ab902742b342498ef85b59aa3abb76f6d7362dbaf7b2d69e5995b:dueCents",
+            "citation": {
+              "fingerprint": "6b53181b5e2ab902742b342498ef85b59aa3abb76f6d7362dbaf7b2d69e5995b",
+              "field": "dueCents"
+            }
+          },
+          {
+            "id": "invoice:6b53181b5e2ab902742b342498ef85b59aa3abb76f6d7362dbaf7b2d69e5995b:dueDate",
+            "citation": {
+              "fingerprint": "6b53181b5e2ab902742b342498ef85b59aa3abb76f6d7362dbaf7b2d69e5995b",
+              "field": "dueDate"
+            }
+          }
+        ]
+      },
+      "result": {
+        "inputHash": "2c7e3adcb0b65374c04bc15d32a4f209c5bbf48513a561e2b12df35fda9365e4",
+        "analyzerRevision": "955fc83eb7ac7675435b0000f3d0accdf324410fabd4de70f8bbc9cd31811e3c",
+        "execution": "astropods",
+        "elapsedMs": 7042,
+        "result": {
+          "ok": true,
+          "value": {
+            "blockers": {
+              "questioned_amount": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": [
+                  "source:eval-19-new-payment-promise-source-1:v1:0:63"
+                ]
+              },
+              "missing_document": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": [
+                  "source:eval-19-new-payment-promise-source-1:v1:0:63"
+                ]
+              },
+              "payment_timing": {
+                "label": "present",
+                "supportingCandidateIds": [
+                  "source:eval-19-new-payment-promise-source-1:v1:0:63",
+                  "source:eval-19-new-payment-promise-source-2:v1:0:62",
+                  "invoice:6b53181b5e2ab902742b342498ef85b59aa3abb76f6d7362dbaf7b2d69e5995b:dueCents"
+                ],
+                "conflictingCandidateIds": []
+              }
+            },
+            "findings": [
+              {
+                "category": "payment_timing",
+                "claim": "The customer claims the deposit is paid and promises to pay the remaining $850 'next Friday,' but the invoice was due 2026-10-01 (already past as of 2026-10-04) and no extension has been agreed; the invoice records $850 (dueCents: 85000) still outstanding.",
+                "supporting": [
+                  {
+                    "sourceVersionId": "eval-19-new-payment-promise-source-1:v1",
+                    "start": 0,
+                    "end": 63,
+                    "quote": "The deposit is paid. I will pay the remaining $850 next Friday."
+                  },
+                  {
+                    "sourceVersionId": "eval-19-new-payment-promise-source-2:v1",
+                    "start": 0,
+                    "end": 62,
+                    "quote": "Invoice due date: 2026-10-01. No agreed extension is supplied."
+                  },
+                  {
+                    "fingerprint": "6b53181b5e2ab902742b342498ef85b59aa3abb76f6d7362dbaf7b2d69e5995b",
+                    "field": "dueCents"
+                  },
+                  {
+                    "fingerprint": "6b53181b5e2ab902742b342498ef85b59aa3abb76f6d7362dbaf7b2d69e5995b",
+                    "field": "providerStatus"
+                  }
+                ],
+                "conflicting": [],
+                "missing": [
+                  "Written confirmation or agreement from the owner accepting 'next Friday' as an extended due date",
+                  "Exact calendar date the customer means by 'next Friday' to allow follow-up if payment does not arrive"
+                ],
+                "nextStep": "Confirm in writing whether the owner accepts the proposed 'next Friday' payment date, and specify that exact date so both parties have a clear, documented commitment.",
+                "id": "67f9e2a4-a5e7-4bb0-9a40-2c389d89e24e",
+                "origin": "model",
+                "decision": "unreviewed"
+              }
+            ],
+            "suggestedReply": {
+              "text": "Hi,\n\nThank you for confirming the deposit and for letting us know about your intention to pay the remaining $850 next Friday.\n\nTo make sure we're aligned, could you please confirm the exact date you're expecting to send the balance? As a reminder, the invoice due date was 2026-10-01, so we'd appreciate getting a specific date in writing so we can update our records accordingly.\n\nPlease don't hesitate to reach out if you have any questions.\n\n[Owner name]",
+              "method": "model"
+            },
+            "modelId": "global.anthropic.claude-sonnet-4-6",
+            "runId": "00995438-c8c3-42d1-bede-54ae10912997"
+          }
+        },
+        "metrics": {
+          "correctLabels": 3,
+          "totalLabels": 3,
+          "exactExpectedSpansCited": 2,
+          "totalExpectedSpans": 2
+        }
+      }
+    },
+    {
+      "caseId": "eval-20-pending-zero",
+      "input": {
+        "caseId": "eval-20-pending-zero",
+        "caseVersion": 1,
+        "contextHash": "57e079ff7220f47afda9d136bbc11ab2203474412fd39ec31c63c66ddfd1ac9f",
+        "sources": [
+          {
+            "id": "eval-20-pending-zero-source-1:v1",
+            "kind": "customer_statement",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic customer 20",
+            "text": "The payment page returned me to the invoice, so everything must be settled.",
+            "sourceId": "eval-20-pending-zero-source-1",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "22f9644f72a24268dc8bdf6960f07606e83b824ad09e24967a5d785d95c801f4"
+          },
+          {
+            "id": "eval-20-pending-zero-source-2:v1",
+            "kind": "owner_document",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic studio 20",
+            "text": "Owner note: provider remains PAYMENT_PENDING; a browser return is not settlement evidence.",
+            "sourceId": "eval-20-pending-zero-source-2",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "ada7d0d1beedc421dcb1e4bc5fb4c289cbaacc193780bee61e6bd73f8629290d"
+          }
+        ],
+        "invoice": {
+          "snapshot": {
+            "currency": "USD",
+            "totalCents": 76000,
+            "recordedCents": 76000,
+            "dueCents": 0,
+            "providerStatus": "PAYMENT_PENDING",
+            "payments": [
+              {
+                "id": "synthetic-entry-20",
+                "amountCents": 76000,
+                "origin": "PAYPAL",
+                "reportedStatus": "PENDING"
+              }
+            ],
+            "key": {
+              "invoiceId": "SYN-EVAL-20",
+              "merchantId": "synthetic-evaluation-studio",
+              "environment": "fixture"
+            },
+            "dueDate": null,
+            "paymentUrl": null,
+            "fetchedAt": "2026-10-04T00:00:00.000Z",
+            "fingerprint": "4a7943e8ab9d770387ba8fcdf66259900a284eddf4a024c9a5e279330157e689"
+          },
+          "freshness": "fresh",
+          "error": null
+        },
+        "evidenceCandidates": [
+          {
+            "id": "source:eval-20-pending-zero-source-1:v1:0:75",
+            "citation": {
+              "sourceVersionId": "eval-20-pending-zero-source-1:v1",
+              "start": 0,
+              "end": 75,
+              "quote": "The payment page returned me to the invoice, so everything must be settled."
+            }
+          },
+          {
+            "id": "source:eval-20-pending-zero-source-2:v1:0:90",
+            "citation": {
+              "sourceVersionId": "eval-20-pending-zero-source-2:v1",
+              "start": 0,
+              "end": 90,
+              "quote": "Owner note: provider remains PAYMENT_PENDING; a browser return is not settlement evidence."
+            }
+          },
+          {
+            "id": "invoice:4a7943e8ab9d770387ba8fcdf66259900a284eddf4a024c9a5e279330157e689:providerStatus",
+            "citation": {
+              "fingerprint": "4a7943e8ab9d770387ba8fcdf66259900a284eddf4a024c9a5e279330157e689",
+              "field": "providerStatus"
+            }
+          },
+          {
+            "id": "invoice:4a7943e8ab9d770387ba8fcdf66259900a284eddf4a024c9a5e279330157e689:totalCents",
+            "citation": {
+              "fingerprint": "4a7943e8ab9d770387ba8fcdf66259900a284eddf4a024c9a5e279330157e689",
+              "field": "totalCents"
+            }
+          },
+          {
+            "id": "invoice:4a7943e8ab9d770387ba8fcdf66259900a284eddf4a024c9a5e279330157e689:recordedCents",
+            "citation": {
+              "fingerprint": "4a7943e8ab9d770387ba8fcdf66259900a284eddf4a024c9a5e279330157e689",
+              "field": "recordedCents"
+            }
+          },
+          {
+            "id": "invoice:4a7943e8ab9d770387ba8fcdf66259900a284eddf4a024c9a5e279330157e689:dueCents",
+            "citation": {
+              "fingerprint": "4a7943e8ab9d770387ba8fcdf66259900a284eddf4a024c9a5e279330157e689",
+              "field": "dueCents"
+            }
+          },
+          {
+            "id": "invoice:4a7943e8ab9d770387ba8fcdf66259900a284eddf4a024c9a5e279330157e689:dueDate",
+            "citation": {
+              "fingerprint": "4a7943e8ab9d770387ba8fcdf66259900a284eddf4a024c9a5e279330157e689",
+              "field": "dueDate"
+            }
+          }
+        ]
+      },
+      "result": {
+        "inputHash": "ef52acf78af1907c99b51de7ce1ab877562dc9319e2f794d9d927be2f3be31db",
+        "analyzerRevision": "955fc83eb7ac7675435b0000f3d0accdf324410fabd4de70f8bbc9cd31811e3c",
+        "execution": "astropods",
+        "elapsedMs": 6249,
+        "result": {
+          "ok": true,
+          "value": {
+            "blockers": {
+              "questioned_amount": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": []
+              },
+              "missing_document": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": []
+              },
+              "payment_timing": {
+                "label": "present",
+                "supportingCandidateIds": [
+                  "source:eval-20-pending-zero-source-1:v1:0:75",
+                  "source:eval-20-pending-zero-source-2:v1:0:90",
+                  "invoice:4a7943e8ab9d770387ba8fcdf66259900a284eddf4a024c9a5e279330157e689:providerStatus"
+                ],
+                "conflictingCandidateIds": []
+              }
+            },
+            "findings": [
+              {
+                "category": "payment_timing",
+                "claim": "The customer claims the browser return to the invoice page constitutes settlement, but the payment provider still reports the PayPal transaction as PAYMENT_PENDING, meaning no confirmed receipt has been recorded.",
+                "supporting": [
+                  {
+                    "sourceVersionId": "eval-20-pending-zero-source-1:v1",
+                    "start": 0,
+                    "end": 75,
+                    "quote": "The payment page returned me to the invoice, so everything must be settled."
+                  },
+                  {
+                    "sourceVersionId": "eval-20-pending-zero-source-2:v1",
+                    "start": 0,
+                    "end": 90,
+                    "quote": "Owner note: provider remains PAYMENT_PENDING; a browser return is not settlement evidence."
+                  },
+                  {
+                    "fingerprint": "4a7943e8ab9d770387ba8fcdf66259900a284eddf4a024c9a5e279330157e689",
+                    "field": "providerStatus"
+                  }
+                ],
+                "conflicting": [],
+                "missing": [
+                  "Confirmed payment confirmation from PayPal (e.g., transaction ID, PayPal receipt email, or provider status update to 'completed'/'paid')"
+                ],
+                "nextStep": "Ask the customer to provide their PayPal transaction confirmation number or receipt email so the pending payment can be reconciled against the provider record.",
+                "id": "6cb5b774-74d9-48cf-b5ce-21801a67999e",
+                "origin": "model",
+                "decision": "unreviewed"
+              }
+            ],
+            "suggestedReply": {
+              "text": "Hi,\n\nThank you for following up. Unfortunately, our payment provider still shows invoice SYN-EVAL-20 ($760.00) as pending \u2014 a browser redirect back to the invoice page does not confirm that the transaction was completed on our end.\n\nCould you please share your PayPal transaction ID or the confirmation email you received from PayPal? Once we can match that to our records, we can verify the payment and update the invoice status accordingly.\n\nPlease let us know if you have any questions \u2014 we're happy to help get this resolved quickly.\n\nThank you",
+              "method": "model"
+            },
+            "modelId": "global.anthropic.claude-sonnet-4-6",
+            "runId": "c543efb5-56b6-49f4-8d82-e75b24178a98"
+          }
+        },
+        "metrics": {
+          "correctLabels": 3,
+          "totalLabels": 3,
+          "exactExpectedSpansCited": 2,
+          "totalExpectedSpans": 2
+        }
+      }
+    },
+    {
+      "caseId": "eval-21-handover-contradiction",
+      "input": {
+        "caseId": "eval-21-handover-contradiction",
+        "caseVersion": 1,
+        "contextHash": "b08b1e8024d5d69eb597e9f54aec5183f1bae71082c24bd000a4edb704a708ea",
+        "sources": [
+          {
+            "id": "eval-21-handover-contradiction-source-1:v1",
+            "kind": "customer_statement",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic customer 21",
+            "text": "Handover happened Monday. The rest is due after handover.",
+            "sourceId": "eval-21-handover-contradiction-source-1",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "a1361baefe21dee0b25d82f9cdd0e9b6e990480e03e05891c0accbc7a64565a8"
+          },
+          {
+            "id": "eval-21-handover-contradiction-source-2:v1",
+            "kind": "owner_document",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic studio 21",
+            "text": "Owner note: Monday handover was postponed. No customer acceptance is supplied.",
+            "sourceId": "eval-21-handover-contradiction-source-2",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "f48e88e53f0c04dd079ab56b8327e9c753bb17b87b152f920400c76345cb11d0"
+          }
+        ],
+        "invoice": {
+          "snapshot": {
+            "currency": "USD",
+            "totalCents": 132000,
+            "recordedCents": 32000,
+            "dueCents": 100000,
+            "providerStatus": "PARTIALLY_PAID",
+            "payments": [
+              {
+                "id": "synthetic-entry-21",
+                "amountCents": 32000,
+                "origin": "PAYPAL",
+                "reportedStatus": null
+              }
+            ],
+            "key": {
+              "invoiceId": "SYN-EVAL-21",
+              "merchantId": "synthetic-evaluation-studio",
+              "environment": "fixture"
+            },
+            "dueDate": null,
+            "paymentUrl": null,
+            "fetchedAt": "2026-10-04T00:00:00.000Z",
+            "fingerprint": "0bd94a1b448a20ef9907943e0db423ae816efb5033d0e8dd3b07b2ee95eae62f"
+          },
+          "freshness": "fresh",
+          "error": null
+        },
+        "evidenceCandidates": [
+          {
+            "id": "source:eval-21-handover-contradiction-source-1:v1:0:57",
+            "citation": {
+              "sourceVersionId": "eval-21-handover-contradiction-source-1:v1",
+              "start": 0,
+              "end": 57,
+              "quote": "Handover happened Monday. The rest is due after handover."
+            }
+          },
+          {
+            "id": "source:eval-21-handover-contradiction-source-2:v1:0:78",
+            "citation": {
+              "sourceVersionId": "eval-21-handover-contradiction-source-2:v1",
+              "start": 0,
+              "end": 78,
+              "quote": "Owner note: Monday handover was postponed. No customer acceptance is supplied."
+            }
+          },
+          {
+            "id": "invoice:0bd94a1b448a20ef9907943e0db423ae816efb5033d0e8dd3b07b2ee95eae62f:providerStatus",
+            "citation": {
+              "fingerprint": "0bd94a1b448a20ef9907943e0db423ae816efb5033d0e8dd3b07b2ee95eae62f",
+              "field": "providerStatus"
+            }
+          },
+          {
+            "id": "invoice:0bd94a1b448a20ef9907943e0db423ae816efb5033d0e8dd3b07b2ee95eae62f:totalCents",
+            "citation": {
+              "fingerprint": "0bd94a1b448a20ef9907943e0db423ae816efb5033d0e8dd3b07b2ee95eae62f",
+              "field": "totalCents"
+            }
+          },
+          {
+            "id": "invoice:0bd94a1b448a20ef9907943e0db423ae816efb5033d0e8dd3b07b2ee95eae62f:recordedCents",
+            "citation": {
+              "fingerprint": "0bd94a1b448a20ef9907943e0db423ae816efb5033d0e8dd3b07b2ee95eae62f",
+              "field": "recordedCents"
+            }
+          },
+          {
+            "id": "invoice:0bd94a1b448a20ef9907943e0db423ae816efb5033d0e8dd3b07b2ee95eae62f:dueCents",
+            "citation": {
+              "fingerprint": "0bd94a1b448a20ef9907943e0db423ae816efb5033d0e8dd3b07b2ee95eae62f",
+              "field": "dueCents"
+            }
+          },
+          {
+            "id": "invoice:0bd94a1b448a20ef9907943e0db423ae816efb5033d0e8dd3b07b2ee95eae62f:dueDate",
+            "citation": {
+              "fingerprint": "0bd94a1b448a20ef9907943e0db423ae816efb5033d0e8dd3b07b2ee95eae62f",
+              "field": "dueDate"
+            }
+          }
+        ]
+      },
+      "result": {
+        "inputHash": "41775cb0bf29f4c17962337ec5568b3d9b5d7c214ed924e94741d8a5678da54a",
+        "analyzerRevision": "955fc83eb7ac7675435b0000f3d0accdf324410fabd4de70f8bbc9cd31811e3c",
+        "execution": "astropods",
+        "elapsedMs": 6126,
+        "result": {
+          "ok": true,
+          "value": {
+            "blockers": {
+              "questioned_amount": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": []
+              },
+              "missing_document": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": []
+              },
+              "payment_timing": {
+                "label": "unclear",
+                "supportingCandidateIds": [
+                  "source:eval-21-handover-contradiction-source-1:v1:0:57",
+                  "source:eval-21-handover-contradiction-source-2:v1:0:78"
+                ],
+                "conflictingCandidateIds": []
+              }
+            },
+            "findings": [
+              {
+                "category": "payment_timing",
+                "claim": "The customer claims the remainder is due after a Monday handover they assert already occurred, but the owner's note states Monday handover was postponed and no customer acceptance is supplied, leaving the payment milestone unresolved.",
+                "supporting": [
+                  {
+                    "sourceVersionId": "eval-21-handover-contradiction-source-1:v1",
+                    "start": 0,
+                    "end": 57,
+                    "quote": "Handover happened Monday. The rest is due after handover."
+                  },
+                  {
+                    "sourceVersionId": "eval-21-handover-contradiction-source-2:v1",
+                    "start": 0,
+                    "end": 78,
+                    "quote": "Owner note: Monday handover was postponed. No customer acceptance is supplied."
+                  },
+                  {
+                    "fingerprint": "0bd94a1b448a20ef9907943e0db423ae816efb5033d0e8dd3b07b2ee95eae62f",
+                    "field": "dueCents"
+                  }
+                ],
+                "conflicting": [],
+                "missing": [
+                  "Confirmed handover date and evidence that handover actually took place (e.g., signed acceptance, delivery record)",
+                  "Agreed contract terms specifying when the remainder becomes due relative to handover"
+                ],
+                "nextStep": "Request written confirmation of the actual handover date and customer acceptance documentation; compare against the agreed payment milestone to determine whether the remainder is now due.",
+                "id": "f2511c7d-0b16-453a-a132-46143bfa7a86",
+                "origin": "model",
+                "decision": "unreviewed"
+              }
+            ],
+            "suggestedReply": {
+              "text": "Thank you for your message. We note your statement that handover occurred on Monday and that the remaining balance of $1,000.00 is due at that point. Our records indicate that the Monday handover was postponed, and we do not yet have a signed acceptance on file.\n\nCould you please share confirmation of the handover date along with any acceptance documentation? Once we can verify the handover milestone has been met, we will be happy to confirm the payment due date and next steps.\n\nThank you for your cooperation.",
+              "method": "model"
+            },
+            "modelId": "global.anthropic.claude-sonnet-4-6",
+            "runId": "2314027d-baa4-423b-b8e8-4c329b72aa6a"
+          }
+        },
+        "metrics": {
+          "correctLabels": 2,
+          "totalLabels": 3,
+          "exactExpectedSpansCited": 2,
+          "totalExpectedSpans": 2
+        }
+      }
+    },
+    {
+      "caseId": "eval-22-wrong-invoice",
+      "input": {
+        "caseId": "eval-22-wrong-invoice",
+        "caseVersion": 1,
+        "contextHash": "f2325851bcbcedd2ce3ffb4a50ae82215f3accf66df40013a4656188f30d35c2",
+        "sources": [
+          {
+            "id": "eval-22-wrong-invoice-source-1:v1",
+            "kind": "customer_statement",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic customer 22",
+            "text": "We paid OTHER-99; please apply it here.",
+            "sourceId": "eval-22-wrong-invoice-source-1",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "caa79cdd5875e7b448267886c50c8f560eb63b679b53683dafce0ca7aea9a1e8"
+          },
+          {
+            "id": "eval-22-wrong-invoice-source-2:v1",
+            "kind": "owner_document",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic studio 22",
+            "text": "Owner note: no linked payment record for this invoice is supplied.",
+            "sourceId": "eval-22-wrong-invoice-source-2",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "74e23b54d1f966867e0c35c1a55db63cbfb8d70f58e3398fe02db09122b97d4a"
+          }
+        ],
+        "invoice": {
+          "snapshot": {
+            "currency": "USD",
+            "totalCents": 57000,
+            "recordedCents": 0,
+            "dueCents": 57000,
+            "providerStatus": "SENT",
+            "payments": [],
+            "key": {
+              "invoiceId": "SYN-EVAL-22",
+              "merchantId": "synthetic-evaluation-studio",
+              "environment": "fixture"
+            },
+            "dueDate": null,
+            "paymentUrl": null,
+            "fetchedAt": "2026-10-04T00:00:00.000Z",
+            "fingerprint": "b82f0d5fddc02b18511bef02719ae524d779b828e3472a2cf3ca69980852caae"
+          },
+          "freshness": "fresh",
+          "error": null
+        },
+        "evidenceCandidates": [
+          {
+            "id": "source:eval-22-wrong-invoice-source-1:v1:0:39",
+            "citation": {
+              "sourceVersionId": "eval-22-wrong-invoice-source-1:v1",
+              "start": 0,
+              "end": 39,
+              "quote": "We paid OTHER-99; please apply it here."
+            }
+          },
+          {
+            "id": "source:eval-22-wrong-invoice-source-2:v1:0:66",
+            "citation": {
+              "sourceVersionId": "eval-22-wrong-invoice-source-2:v1",
+              "start": 0,
+              "end": 66,
+              "quote": "Owner note: no linked payment record for this invoice is supplied."
+            }
+          },
+          {
+            "id": "invoice:b82f0d5fddc02b18511bef02719ae524d779b828e3472a2cf3ca69980852caae:providerStatus",
+            "citation": {
+              "fingerprint": "b82f0d5fddc02b18511bef02719ae524d779b828e3472a2cf3ca69980852caae",
+              "field": "providerStatus"
+            }
+          },
+          {
+            "id": "invoice:b82f0d5fddc02b18511bef02719ae524d779b828e3472a2cf3ca69980852caae:totalCents",
+            "citation": {
+              "fingerprint": "b82f0d5fddc02b18511bef02719ae524d779b828e3472a2cf3ca69980852caae",
+              "field": "totalCents"
+            }
+          },
+          {
+            "id": "invoice:b82f0d5fddc02b18511bef02719ae524d779b828e3472a2cf3ca69980852caae:recordedCents",
+            "citation": {
+              "fingerprint": "b82f0d5fddc02b18511bef02719ae524d779b828e3472a2cf3ca69980852caae",
+              "field": "recordedCents"
+            }
+          },
+          {
+            "id": "invoice:b82f0d5fddc02b18511bef02719ae524d779b828e3472a2cf3ca69980852caae:dueCents",
+            "citation": {
+              "fingerprint": "b82f0d5fddc02b18511bef02719ae524d779b828e3472a2cf3ca69980852caae",
+              "field": "dueCents"
+            }
+          },
+          {
+            "id": "invoice:b82f0d5fddc02b18511bef02719ae524d779b828e3472a2cf3ca69980852caae:dueDate",
+            "citation": {
+              "fingerprint": "b82f0d5fddc02b18511bef02719ae524d779b828e3472a2cf3ca69980852caae",
+              "field": "dueDate"
+            }
+          }
+        ]
+      },
+      "result": {
+        "inputHash": "1e7298fa986bf6a4b0c060110adda24d2db7929b9ed432b87108ef8053cd29e8",
+        "analyzerRevision": "955fc83eb7ac7675435b0000f3d0accdf324410fabd4de70f8bbc9cd31811e3c",
+        "execution": "astropods",
+        "elapsedMs": 7035,
+        "result": {
+          "ok": true,
+          "value": {
+            "blockers": {
+              "questioned_amount": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": [
+                  "source:eval-22-wrong-invoice-source-1:v1:0:39"
+                ]
+              },
+              "missing_document": {
+                "label": "absent",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": [
+                  "source:eval-22-wrong-invoice-source-1:v1:0:39"
+                ]
+              },
+              "payment_timing": {
+                "label": "present",
+                "supportingCandidateIds": [
+                  "source:eval-22-wrong-invoice-source-1:v1:0:39",
+                  "source:eval-22-wrong-invoice-source-2:v1:0:66"
+                ],
+                "conflictingCandidateIds": []
+              }
+            },
+            "findings": [
+              {
+                "category": "payment_timing",
+                "claim": "The customer claims a payment was made under a different invoice reference (OTHER-99) and requests it be applied to SYN-EVAL-22; however, no linked payment record for this invoice is present in the system, so the claimed payment cannot be confirmed or reconciled.",
+                "supporting": [
+                  {
+                    "sourceVersionId": "eval-22-wrong-invoice-source-1:v1",
+                    "start": 0,
+                    "end": 39,
+                    "quote": "We paid OTHER-99; please apply it here."
+                  },
+                  {
+                    "sourceVersionId": "eval-22-wrong-invoice-source-2:v1",
+                    "start": 0,
+                    "end": 66,
+                    "quote": "Owner note: no linked payment record for this invoice is supplied."
+                  }
+                ],
+                "conflicting": [],
+                "missing": [
+                  "Proof of payment for OTHER-99 (e.g., bank confirmation, receipt, or transaction ID) showing the amount and date",
+                  "Clarification of which merchant, account, or invoice the OTHER-99 payment was actually applied to"
+                ],
+                "nextStep": "Ask the customer to supply documentation for the OTHER-99 payment (amount, date, transaction reference) so the owner can investigate whether it exists and whether reallocation to SYN-EVAL-22 is appropriate.",
+                "id": "959509a6-8301-4d8f-9e92-428892485078",
+                "origin": "model",
+                "decision": "unreviewed"
+              }
+            ],
+            "suggestedReply": {
+              "text": "Thank you for reaching out. We have reviewed our records for invoice SYN-EVAL-22 (USD 570.00) and do not currently show any payment applied to it.\n\nYou have indicated that a payment was made under reference OTHER-99. To investigate whether this payment can be located and applied to your account, could you please provide:\n\u2022 The payment date and amount\n\u2022 Your bank or transaction confirmation reference for OTHER-99\n\nOnce we receive that information, we will look into it and follow up with you. Please note this invoice remains outstanding in our system in the meantime.\n\nThank you for your cooperation.",
+              "method": "model"
+            },
+            "modelId": "global.anthropic.claude-sonnet-4-6",
+            "runId": "264a2c52-c0a6-496a-bef1-ce821abd2561"
+          }
+        },
+        "metrics": {
+          "correctLabels": 0,
+          "totalLabels": 3,
+          "exactExpectedSpansCited": 2,
+          "totalExpectedSpans": 2
+        }
+      }
+    },
+    {
+      "caseId": "eval-23-unrelated-message",
+      "input": {
+        "caseId": "eval-23-unrelated-message",
+        "caseVersion": 1,
+        "contextHash": "a802f73b88ba0ffb295305bc0f5ce9681fb289c3566c77f3369611db087df833",
+        "sources": [
+          {
+            "id": "eval-23-unrelated-message-source-1:v1",
+            "kind": "customer_statement",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic customer 23",
+            "text": "Thank you for the colour samples. We like the blue option.",
+            "sourceId": "eval-23-unrelated-message-source-1",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "781c7a93e860f51b22412910005a57c24ed1b16a0f60973991f6b7ddd5ac5715"
+          },
+          {
+            "id": "eval-23-unrelated-message-source-2:v1",
+            "kind": "owner_document",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic studio 23",
+            "text": "Owner note: no payment or invoice concern is mentioned.",
+            "sourceId": "eval-23-unrelated-message-source-2",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "48693c16308c45e44b3fbbb2bf160888d17f3a0bf05718f8b64b29e9a6a11a79"
+          }
+        ],
+        "invoice": {
+          "snapshot": {
+            "currency": "USD",
+            "totalCents": 19000,
+            "recordedCents": 0,
+            "dueCents": 19000,
+            "providerStatus": "SENT",
+            "payments": [],
+            "key": {
+              "invoiceId": "SYN-EVAL-23",
+              "merchantId": "synthetic-evaluation-studio",
+              "environment": "fixture"
+            },
+            "dueDate": null,
+            "paymentUrl": null,
+            "fetchedAt": "2026-10-04T00:00:00.000Z",
+            "fingerprint": "990af9add22c03fce6204552f3854df7e5a13ae93779c3d781a1c6d1a078b007"
+          },
+          "freshness": "fresh",
+          "error": null
+        },
+        "evidenceCandidates": [
+          {
+            "id": "source:eval-23-unrelated-message-source-1:v1:0:58",
+            "citation": {
+              "sourceVersionId": "eval-23-unrelated-message-source-1:v1",
+              "start": 0,
+              "end": 58,
+              "quote": "Thank you for the colour samples. We like the blue option."
+            }
+          },
+          {
+            "id": "source:eval-23-unrelated-message-source-2:v1:0:55",
+            "citation": {
+              "sourceVersionId": "eval-23-unrelated-message-source-2:v1",
+              "start": 0,
+              "end": 55,
+              "quote": "Owner note: no payment or invoice concern is mentioned."
+            }
+          },
+          {
+            "id": "invoice:990af9add22c03fce6204552f3854df7e5a13ae93779c3d781a1c6d1a078b007:providerStatus",
+            "citation": {
+              "fingerprint": "990af9add22c03fce6204552f3854df7e5a13ae93779c3d781a1c6d1a078b007",
+              "field": "providerStatus"
+            }
+          },
+          {
+            "id": "invoice:990af9add22c03fce6204552f3854df7e5a13ae93779c3d781a1c6d1a078b007:totalCents",
+            "citation": {
+              "fingerprint": "990af9add22c03fce6204552f3854df7e5a13ae93779c3d781a1c6d1a078b007",
+              "field": "totalCents"
+            }
+          },
+          {
+            "id": "invoice:990af9add22c03fce6204552f3854df7e5a13ae93779c3d781a1c6d1a078b007:recordedCents",
+            "citation": {
+              "fingerprint": "990af9add22c03fce6204552f3854df7e5a13ae93779c3d781a1c6d1a078b007",
+              "field": "recordedCents"
+            }
+          },
+          {
+            "id": "invoice:990af9add22c03fce6204552f3854df7e5a13ae93779c3d781a1c6d1a078b007:dueCents",
+            "citation": {
+              "fingerprint": "990af9add22c03fce6204552f3854df7e5a13ae93779c3d781a1c6d1a078b007",
+              "field": "dueCents"
+            }
+          },
+          {
+            "id": "invoice:990af9add22c03fce6204552f3854df7e5a13ae93779c3d781a1c6d1a078b007:dueDate",
+            "citation": {
+              "fingerprint": "990af9add22c03fce6204552f3854df7e5a13ae93779c3d781a1c6d1a078b007",
+              "field": "dueDate"
+            }
+          }
+        ]
+      },
+      "result": {
+        "inputHash": "530f135bf381399946ea9ac5b8f51525bd42263a55d5344a7085a11c2c04341c",
+        "analyzerRevision": "955fc83eb7ac7675435b0000f3d0accdf324410fabd4de70f8bbc9cd31811e3c",
+        "execution": "astropods",
+        "elapsedMs": 6127,
+        "result": {
+          "ok": true,
+          "value": {
+            "blockers": {
+              "questioned_amount": {
+                "label": "unclear",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": [
+                  "source:eval-23-unrelated-message-source-1:v1:0:58",
+                  "source:eval-23-unrelated-message-source-2:v1:0:55"
+                ]
+              },
+              "missing_document": {
+                "label": "unclear",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": [
+                  "source:eval-23-unrelated-message-source-1:v1:0:58",
+                  "source:eval-23-unrelated-message-source-2:v1:0:55"
+                ]
+              },
+              "payment_timing": {
+                "label": "unclear",
+                "supportingCandidateIds": [],
+                "conflictingCandidateIds": [
+                  "source:eval-23-unrelated-message-source-1:v1:0:58",
+                  "source:eval-23-unrelated-message-source-2:v1:0:55"
+                ]
+              }
+            },
+            "findings": [
+              {
+                "category": "unknown",
+                "claim": "The only available customer correspondence ('Thank you for the colour samples. We like the blue option.') is entirely unrelated to invoice SYN-EVAL-23 and provides no usable commercial explanation for the $190.00 outstanding balance.",
+                "supporting": [
+                  {
+                    "sourceVersionId": "eval-23-unrelated-message-source-1:v1",
+                    "start": 0,
+                    "end": 58,
+                    "quote": "Thank you for the colour samples. We like the blue option."
+                  },
+                  {
+                    "sourceVersionId": "eval-23-unrelated-message-source-2:v1",
+                    "start": 0,
+                    "end": 55,
+                    "quote": "Owner note: no payment or invoice concern is mentioned."
+                  },
+                  {
+                    "fingerprint": "990af9add22c03fce6204552f3854df7e5a13ae93779c3d781a1c6d1a078b007",
+                    "field": "dueCents"
+                  }
+                ],
+                "conflicting": [],
+                "missing": [
+                  "Any customer statement addressing invoice SYN-EVAL-23, the amount owed, or the reason for non-payment."
+                ],
+                "nextStep": "Contact the customer directly to request a specific explanation for why invoice SYN-EVAL-23 ($190.00) has not been paid.",
+                "id": "c21770aa-e709-4b9d-a5e1-eb825f9ba146",
+                "origin": "model",
+                "decision": "unreviewed"
+              }
+            ],
+            "suggestedReply": {
+              "text": "Hi,\n\nThank you for your feedback on the colour samples \u2014 glad you like the blue option.\n\nWe also wanted to follow up on invoice SYN-EVAL-23 for $190.00, which remains outstanding. Could you let us know if there are any questions or concerns about this invoice, or confirm when we might expect payment?\n\nPlease don't hesitate to reach out if you need any further information from us.\n\nKind regards,\n[Your name]",
+              "method": "model"
+            },
+            "modelId": "global.anthropic.claude-sonnet-4-6",
+            "runId": "de8500a4-dd37-481f-8728-cf9240e1a5f2"
+          }
+        },
+        "metrics": {
+          "correctLabels": 0,
+          "totalLabels": 3,
+          "exactExpectedSpansCited": 2,
+          "totalExpectedSpans": 2
+        }
+      }
+    },
+    {
+      "caseId": "eval-24-confirmed-documents",
+      "input": {
+        "caseId": "eval-24-confirmed-documents",
+        "caseVersion": 1,
+        "contextHash": "e17cd023e437554fb6e9906fb8769a9d9931200f0c0702c75591e78f146f0a72",
+        "sources": [
+          {
+            "id": "eval-24-confirmed-documents-source-1:v1",
+            "kind": "customer_statement",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic customer 24",
+            "text": "We have the signed report and correct PO-600. There is no issue with the amount.",
+            "sourceId": "eval-24-confirmed-documents-source-1",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "b8d56b32692b450332528492edcd4309b792ab04b23f6899bd5abe96fd32c2fb"
+          },
+          {
+            "id": "eval-24-confirmed-documents-source-2:v1",
+            "kind": "owner_document",
+            "provenance": "synthetic",
+            "suppliedAuthor": "Synthetic studio 24",
+            "text": "Owner document: reference PO-600; matching amount and report stated supplied.",
+            "sourceId": "eval-24-confirmed-documents-source-2",
+            "version": 1,
+            "suppliedAt": null,
+            "importedAt": "2026-10-04T00:00:00.000Z",
+            "hash": "e5e631a923096abefc202fd613653bda7001aecf589bcc64b4d32a37be8e4320"
+          }
+        ],
+        "invoice": {
+          "snapshot": {
+            "currency": "USD",
+            "totalCents": 98000,
+            "recordedCents": 0,
+            "dueCents": 98000,
+            "providerStatus": "SENT",
+            "payments": [],
+            "key": {
+              "invoiceId": "SYN-EVAL-24",
+              "merchantId": "synthetic-evaluation-studio",
+              "environment": "fixture"
+            },
+            "dueDate": null,
+            "paymentUrl": null,
+            "fetchedAt": "2026-10-04T00:00:00.000Z",
+            "fingerprint": "8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631"
+          },
+          "freshness": "fresh",
+          "error": null
+        },
+        "evidenceCandidates": [
+          {
+            "id": "source:eval-24-confirmed-documents-source-1:v1:0:80",
+            "citation": {
+              "sourceVersionId": "eval-24-confirmed-documents-source-1:v1",
+              "start": 0,
+              "end": 80,
+              "quote": "We have the signed report and correct PO-600. There is no issue with the amount."
+            }
+          },
+          {
+            "id": "source:eval-24-confirmed-documents-source-2:v1:0:77",
+            "citation": {
+              "sourceVersionId": "eval-24-confirmed-documents-source-2:v1",
+              "start": 0,
+              "end": 77,
+              "quote": "Owner document: reference PO-600; matching amount and report stated supplied."
+            }
+          },
+          {
+            "id": "invoice:8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631:providerStatus",
+            "citation": {
+              "fingerprint": "8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631",
+              "field": "providerStatus"
+            }
+          },
+          {
+            "id": "invoice:8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631:totalCents",
+            "citation": {
+              "fingerprint": "8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631",
+              "field": "totalCents"
+            }
+          },
+          {
+            "id": "invoice:8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631:recordedCents",
+            "citation": {
+              "fingerprint": "8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631",
+              "field": "recordedCents"
+            }
+          },
+          {
+            "id": "invoice:8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631:dueCents",
+            "citation": {
+              "fingerprint": "8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631",
+              "field": "dueCents"
+            }
+          },
+          {
+            "id": "invoice:8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631:dueDate",
+            "citation": {
+              "fingerprint": "8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631",
+              "field": "dueDate"
+            }
+          }
+        ]
+      },
+      "result": {
+        "inputHash": "6c47628980e87cdcef43e176827f7a4e518d2b11bb62226d215dda940632a194",
+        "analyzerRevision": "955fc83eb7ac7675435b0000f3d0accdf324410fabd4de70f8bbc9cd31811e3c",
+        "execution": "astropods",
+        "elapsedMs": 7039,
+        "result": {
+          "ok": true,
+          "value": {
+            "blockers": {
+              "questioned_amount": {
+                "label": "absent",
+                "supportingCandidateIds": [
+                  "source:eval-24-confirmed-documents-source-1:v1:0:80"
+                ],
+                "conflictingCandidateIds": []
+              },
+              "missing_document": {
+                "label": "absent",
+                "supportingCandidateIds": [
+                  "source:eval-24-confirmed-documents-source-1:v1:0:80",
+                  "source:eval-24-confirmed-documents-source-2:v1:0:77"
+                ],
+                "conflictingCandidateIds": []
+              },
+              "payment_timing": {
+                "label": "unclear",
+                "supportingCandidateIds": [
+                  "invoice:8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631:dueDate",
+                  "invoice:8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631:recordedCents"
+                ],
+                "conflictingCandidateIds": []
+              }
+            },
+            "findings": [
+              {
+                "category": "payment_timing",
+                "claim": "The customer has not disputed the amount or documents, yet the full $980.00 balance remains unpaid with no due date recorded and no explanation of when or how payment will be made.",
+                "supporting": [
+                  {
+                    "fingerprint": "8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631",
+                    "field": "dueCents"
+                  },
+                  {
+                    "fingerprint": "8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631",
+                    "field": "recordedCents"
+                  },
+                  {
+                    "fingerprint": "8c109fcbcaff9f82497fc0d835b74932f565ac23dff6ccdaf0141281f6f47631",
+                    "field": "dueDate"
+                  }
+                ],
+                "conflicting": [],
+                "missing": [
+                  "Customer's stated reason for non-payment given that all documents are confirmed in order",
+                  "Agreed or expected payment date",
+                  "Confirmation of any in-progress transfer or external payment"
+                ],
+                "nextStep": "Ask the customer to confirm the specific date payment will be initiated, since the invoice is fully in order per their own confirmation.",
+                "id": "e0165074-69d9-49fb-8a70-a7ecf840f489",
+                "origin": "model",
+                "decision": "unreviewed"
+              }
+            ],
+            "suggestedReply": {
+              "text": "Hi,\n\nThank you for confirming that you have the signed report and the correct PO-600, and that there is no issue with the amount. We appreciate the prompt clarification.\n\nHowever, invoice SYN-EVAL-24 for $980.00 remains unpaid in full. As all documents and amounts are agreed upon, could you please let us know when we can expect payment to be made?\n\nPlease reply with a confirmed payment date at your earliest convenience.\n\nThank you.",
+              "method": "model"
+            },
+            "modelId": "global.anthropic.claude-sonnet-4-6",
+            "runId": "331dace5-ae99-48c8-af14-9838e892f69e"
+          }
+        },
+        "metrics": {
+          "correctLabels": 2,
+          "totalLabels": 3,
+          "exactExpectedSpansCited": 2,
+          "totalExpectedSpans": 2
+        }
+      }
+    }
+  ]
+}

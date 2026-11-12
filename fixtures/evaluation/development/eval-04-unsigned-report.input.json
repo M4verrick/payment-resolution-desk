@@ -1,0 +1,33 @@
+{
+  "id": "eval-04-unsigned-report",
+  "customerId": "synthetic-customer-04",
+  "contact": "customer04@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-04",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 85000,
+    "recordedCents": 0,
+    "dueCents": 85000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-04-unsigned-report-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 04",
+      "text": "Please supply the signed completion report before finance processes this invoice."
+    },
+    {
+      "id": "eval-04-unsigned-report-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 04",
+      "text": "Completion report: Client signature: not supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

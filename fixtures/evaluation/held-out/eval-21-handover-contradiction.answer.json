@@ -1,0 +1,41 @@
+{
+  "id": "eval-21-handover-contradiction",
+  "expectedBlockers": {
+    "questioned_amount": "absent",
+    "missing_document": "absent",
+    "payment_timing": "present"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-21-handover-contradiction-source-1",
+      "start": 0,
+      "end": 57,
+      "quote": "Handover happened Monday. The rest is due after handover."
+    },
+    {
+      "sourceId": "eval-21-handover-contradiction-source-2",
+      "start": 0,
+      "end": 78,
+      "quote": "Owner note: Monday handover was postponed. No customer acceptance is supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Inspect the contradictory handover sources and ask for confirmation."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

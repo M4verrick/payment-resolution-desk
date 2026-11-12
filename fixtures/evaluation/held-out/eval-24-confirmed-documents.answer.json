@@ -1,0 +1,41 @@
+{
+  "id": "eval-24-confirmed-documents",
+  "expectedBlockers": {
+    "questioned_amount": "absent",
+    "missing_document": "absent",
+    "payment_timing": "absent"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-24-confirmed-documents-source-1",
+      "start": 0,
+      "end": 80,
+      "quote": "We have the signed report and correct PO-600. There is no issue with the amount."
+    },
+    {
+      "sourceId": "eval-24-confirmed-documents-source-2",
+      "start": 0,
+      "end": 77,
+      "quote": "Owner document: reference PO-600; matching amount and report stated supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Keep the three blockers absent; invoice status remains separate."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

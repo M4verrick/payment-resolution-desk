@@ -1,0 +1,40 @@
+{
+  "id": "eval-19-new-payment-promise",
+  "customerId": "synthetic-customer-19",
+  "contact": "customer19@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-19",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 110000,
+    "recordedCents": 25000,
+    "dueCents": 85000,
+    "providerStatus": "PARTIALLY_PAID",
+    "payments": [
+      {
+        "id": "synthetic-entry-19",
+        "amountCents": 25000,
+        "origin": "PAYPAL",
+        "reportedStatus": null
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "eval-19-new-payment-promise-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 19",
+      "text": "The deposit is paid. I will pay the remaining $850 next Friday."
+    },
+    {
+      "id": "eval-19-new-payment-promise-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 19",
+      "text": "Invoice due date: 2026-10-01. No agreed extension is supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

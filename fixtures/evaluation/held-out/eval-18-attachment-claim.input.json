@@ -1,0 +1,33 @@
+{
+  "id": "eval-18-attachment-claim",
+  "customerId": "synthetic-customer-18",
+  "contact": "customer18@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-18",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 48000,
+    "recordedCents": 0,
+    "dueCents": 48000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-18-attachment-claim-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 18",
+      "text": "The reminder says a report was attached, but I did not receive it."
+    },
+    {
+      "id": "eval-18-attachment-claim-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 18",
+      "text": "Owner note: report text exists here; no attachment or delivery evidence is supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "eval-02-rate-version",
+  "expectedBlockers": {
+    "questioned_amount": "present",
+    "missing_document": "absent",
+    "payment_timing": "absent"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-02-rate-version-source-1",
+      "start": 0,
+      "end": 68,
+      "quote": "Our copy lists a $75 rate; this invoice uses $90 for the same hours."
+    },
+    {
+      "sourceId": "eval-02-rate-version-source-2",
+      "start": 0,
+      "end": 75,
+      "quote": "Owner document: draft rate sheet lists $90; signed acceptance not supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Compare the approved rate version before confirming a correction."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}

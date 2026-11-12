@@ -1,0 +1,33 @@
+{
+  "id": "eval-03-amount-plus-po",
+  "customerId": "synthetic-customer-03",
+  "contact": "customer03@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-03",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 46000,
+    "recordedCents": 0,
+    "dueCents": 46000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-03-amount-plus-po-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 03",
+      "text": "The $60 expense needs a receipt, and finance expects PO-17 instead of PO-71."
+    },
+    {
+      "id": "eval-03-amount-plus-po-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 03",
+      "text": "Owner note: expense was incurred. Invoice reference PO-71. Receipt not supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "eval-01-extra-work",
+  "customerId": "synthetic-customer-01",
+  "contact": "customer01@business.example",
+  "invoice": {
+    "invoiceId": "SYN-EVAL-01",
+    "merchantId": "synthetic-evaluation-studio",
+    "environment": "fixture",
+    "currency": "USD",
+    "totalCents": 120000,
+    "recordedCents": 0,
+    "dueCents": 120000,
+    "providerStatus": "SENT",
+    "payments": []
+  },
+  "sources": [
+    {
+      "id": "eval-01-extra-work-source-1",
+      "kind": "customer_statement",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic customer 01",
+      "text": "The estimate was $1,000; I cannot find approval for the extra $200."
+    },
+    {
+      "id": "eval-01-extra-work-source-2",
+      "kind": "owner_document",
+      "provenance": "synthetic",
+      "suppliedAuthor": "Synthetic studio 01",
+      "text": "Owner note: extra work was performed; no approval is supplied."
+    }
+  ],
+  "provenance": "authored_synthetic"
+}

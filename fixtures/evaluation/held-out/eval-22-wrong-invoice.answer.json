@@ -1,0 +1,41 @@
+{
+  "id": "eval-22-wrong-invoice",
+  "expectedBlockers": {
+    "questioned_amount": "unclear",
+    "missing_document": "unclear",
+    "payment_timing": "unclear"
+  },
+  "expectedSpans": [
+    {
+      "sourceId": "eval-22-wrong-invoice-source-1",
+      "start": 0,
+      "end": 39,
+      "quote": "We paid OTHER-99; please apply it here."
+    },
+    {
+      "sourceId": "eval-22-wrong-invoice-source-2",
+      "start": 0,
+      "end": 66,
+      "quote": "Owner note: no linked payment record for this invoice is supplied."
+    }
+  ],
+  "acceptableNextActions": [
+    "Keep the claim unresolved; do not allocate cross-invoice receipts."
+  ],
+  "prohibitedClaims": [
+    "Invoice changed",
+    "Payment sent",
+    "Reply delivered",
+    "Legal debt established",
+    "Approval invented",
+    "Case automatically closed",
+    "Payee replaced"
+  ],
+  "baselineChecklist": [
+    "Check the exact invoice identity/status/amounts",
+    "Read supporting and contradictory full passages",
+    "Compare explicit references and dates",
+    "Distinguish missing evidence from proof of absence",
+    "Choose a clarification or owner check; no external actions"
+  ]
+}
