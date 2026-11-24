@@ -45,7 +45,7 @@ Startup makes no provider calls. The server binds to localhost; this is a single
 
 ## Verified scope and limits
 
-Verified on 12 November 2026: a real SGD 900 PayPal sandbox invoice, genuine Astropods analysis, exact citation navigation, persisted owner corrections and a reviewed reply copied through the browser. The latest review/copy events match the current evidence context. No message or payment was sent.
+Verified on 12 November 2026: a real SGD 900 PayPal sandbox invoice, genuine Astropods analysis, exact citation navigation, persisted owner corrections and a reviewed reply copied through the browser. The recorded review/copy events matched the evidence context observed at that time. No message or payment was sent.
 
 The first held-out evaluation stopped at case 4 on malformed JSON. A serialization fix enabled completion. The latest measured prompt completed a second repeat of the same 12 cases: **27/36 blocker labels (75%)**, **22/24 expected spans**, **5.9s median latency**. Preliminary review found 8 aligned next actions, 3 partial and 1 unsupported; the proposed 10/12 target remains unmet. This repeated set is not unseen evaluation, and semantic acceptance is not certified. These small synthetic results do not establish production reliability or customer impact. Read the [full evaluation report](docs/evaluation-2026-11-12.md).
 
