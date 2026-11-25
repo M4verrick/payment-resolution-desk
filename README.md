@@ -2,6 +2,8 @@
 
 Review an unpaid PayPal invoice alongside customer correspondence, inspect cited AI suggestions, and prepare an owner-reviewed reply. Saving or copying never sends a message. A commercial case decision and the invoice's payment status remain separate.
 
+Read [ARCHITECTURE.md](ARCHITECTURE.md) for the complete system design, request flows, data model, configuration, failure modes and known issues.
+
 The prototype uses React/TypeScript, Fastify, SQLite and Astropods Gateway with Claude Sonnet 4.6. It supports authored synthetic correspondence and read-only allowlisted PayPal sandbox invoices in USD or SGD. No invoice creation, sending, editing, refunds or payment API is implemented.
 
 ## PayPal, AI and sponsor integration
